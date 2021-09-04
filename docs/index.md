@@ -1,14 +1,14 @@
 # Smart Bot Suite - Diseño Flujos Versión 1.1.5.4
 
-El presente instructivo tiene como objetivo explicar el funcionamiento de la plataforma SMART BOT CAPTURA, la cual permite al usuario agilizar y automatizar procesos manuales.
+El instructivo tiene como objetivo explicar el funcionamiento de la plataforma SMART BOT CAPTURA, la cual permite al usuario agilizar y automatizar procesos manuales.
 
-[Requisitos técnicos](general/Requisitos-tecnicos.md)
+## [Requisitos técnicos](general/Requisitos-tecnicos.md)
 
-[Instalación](general/Instalacion.md)
+## [Instalación](general/Instalacion.md)
 
-[Primeros pasos](general/Primeros-pasos.md)
+## [Primeros pasos](general/Primeros-pasos.md)
 
-[Arquitectura SOA](general/Arquitectura-SOA.md)
+## [Arquitectura SOA](general/Arquitectura-SOA.md)
 
 
 
@@ -39,20 +39,20 @@ El presente instructivo tiene como objetivo explicar el funcionamiento de la pla
 
 # Herramientas
 
-### [Archivos](funciones/Archivos.md)
+### [📃Archivos](funciones/Archivos.md)
 
 Las funciones de Archivo le permitirán automatizar diferentes acciones y procesos básicos sobre diferentes tipos de archivos y directorios o carpetas.
 
 ---
 
-### [Base de Datos](funciones/BasedeDatos.md)
+### [🛢Base de Datos](funciones/BasedeDatos.md)
 
 Posee soporte de múltiples conectores de motores de base de datos que se pueden configurar global o personalizado por variable [Configurar](general/Base-de-datos.md)
 
 
 ---
 
-### [Comprimir](funciones/Comprimir.md)
+### [🗳Comprimir](funciones/Comprimir.md)
 
 Esta función posee el tipo de variable `C`  es decir de tipo calculado para más información acerca de los tipos de variables de clic [aquí](general/Eventos/Variables.md)
 
@@ -66,7 +66,7 @@ Contiene un ejemplo de las funcionalidades de comprimir y de descomprimir
 
 ---
 
-### [Condiciones](funciones/Condiciones.md)
+### [📎Condiciones](funciones/Condiciones.md)
 
 Los operadores lógicos pueden crear condiciones compuestas en una fórmula, como que se deben cumplir dos o más condiciones para elegir un determinado método de cálculo. Con los operadores lógicos, puede describir estas combinaciones de condiciones.
 
@@ -83,35 +83,35 @@ Los operadores lógicos pueden crear condiciones compuestas en una fórmula, com
 
 ---
 
-### [Consola](funciones/Consola.md)
+### [🖥Consola](funciones/Consola.md)
 
 Con las opciones de consola puede ejecutar código Vb, CSharp, CMD, llamado a librerias.dll externas, PowerShell
 
 ---
 
-### [Desencadenadores](funciones/Desencadenadores.md)
+### [📤Desencadenadores](funciones/Desencadenadores.md)
 
 Secuencias de trabajo que permiten lanzar una tarea cuando ocurre un evento 
 
 ---
 
-### [Eventos Robot](funciones/EventosRobot.md)
+### [🛠Eventos Robot](funciones/EventosRobot.md)
 
 Tareas propias de automatización que permite generar acciones de trabajo en la ejecución de los flujos
 
 ---
 
-### [Excel](funciones/Excel.md)
+### [📰Excel](funciones/Excel.md)
 
-### [Ftp](funciones/Ftp.md)
+### [📦Ftp](funciones/Ftp.md)
 
-### [Funciones Fechas](funciones/FuncionesFechas.md)
+### [📆Funciones Fechas](funciones/FuncionesFechas.md)
 
-### [Funciones Matematicas](funciones/FuncionesMatematicas.md)
+### [⚗Funciones Matematicas](funciones/FuncionesMatematicas.md)
 
-### [Funciones Strings](funciones/FuncionesStrings.md)
+### [🧰Funciones Strings](funciones/FuncionesStrings.md)
 
-### [JSON](funciones/JSON.md)
+### [🔩JSON](funciones/JSON.md)
 
 Este tipo de funciones requieren un poco de conocimiento técnico básico a nivel de conocimientos sobre [JSON](https://www.json.org/json-es.html)
 
@@ -120,31 +120,31 @@ Las funciones JSON pueden ser usadas principalmente para extracción de datos ya
 ---
 
 
-### [Loop](funciones/Loop.md)
+### [🖇Loop](funciones/Loop.md)
 
-### [Mail](funciones/Mail.md)
+### [✉Mail](funciones/Mail.md)
 
-### [Mouse](funciones/Mouse.md)
+### [🖱Mouse](funciones/Mouse.md)
 
-### [OCR](funciones/OCR.md)
+### [🗄OCR](funciones/OCR.md)
 
-### [PDF](funciones/PDF.md)
+### [📜PDF](funciones/PDF.md)
 
-### [Seguridad](funciones/Seguridad.md)
+### [🔐Seguridad](funciones/Seguridad.md)
 
-### [Tablas](funciones/Tablas.md)
+### [📠Tablas](funciones/Tablas.md)
 
-### [Teclado](funciones/Teclado.md)
+### [⌨Teclado](funciones/Teclado.md)
 
-### [Temporizador](funciones/Temporizador.md)
+### [⏱Temporizador](funciones/Temporizador.md)
 
-### [Web](funciones/Web.md)
+### [💳Web](funciones/Web.md)
 
-### [Whatsapp](funciones/Whatsapp.md)
+### [📍Whatsapp](funciones/Whatsapp.md)
 
 Al implementar la automatización tambien puede hacer uso de [Whatsapp Web](https://web.whatsapp.com/)
 
 ---
 
-### [Windows](funciones/Windows.md)
+### [💻Windows](funciones/Windows.md)
 
