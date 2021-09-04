@@ -43,31 +43,31 @@ Software que usa las funcionalidades nativas de las aplicaciones o sistemas para
 
 | Característica            | Referencia |
 | --------------------------------- | ----------- |
-|Archivos |[Archivos](funciones/Archivos.md)|
-|base de datos |[Base de Datos](funciones/BasedeDatos.md)|
-|Compresion |[Comprimir](funciones/Comprimir.md)|
-|Condicionales |[Condiciones](funciones/Condiciones.md)|
-|Consola |[Consola](funciones/Consola.md)|
-|Desencadenadores|[Desencadenadores](funciones/Desencadenadores.md)|
-|Eventos |[Eventos Robot](funciones/EventosRobot.md)|
-|Excel |[Excel](funciones/Excel.md)|
-|Ftp|[Ftp](funciones/Ftp.md)|
-|Funciones fechas|[Funciones Fechas](funciones/FuncionesFechas.md)|
-|Matemáticas |[Funciones Matematicas](funciones/FuncionesMatematicas.md)|
-|Cadenas de texto|[Funciones Strings](funciones/FuncionesStrings.md)|
-|Json|[JSON](funciones/JSON.md)|
-|Loops|[Loop](funciones/Loop.md)|
-|Correo|[Mail](funciones/Mail.md)|
-|Mouse|[Mouse](funciones/Mouse.md)|
-|Ocr|[OCR](funciones/OCR.md)|
-|Pdf|[PDF](funciones/PDF.md)|
-|Seguridad|[Seguridad](funciones/Seguridad.md)|
-|Tablas|[Tablas](funciones/Tablas.md)|
-|Teclado|[Teclado](funciones/Teclado.md)|
-|Temporizador|[Temporizador](funciones/Temporizador.md)|
-|Web|[Web](funciones/Web.md)|
-|Whatsapp|[Whatsapp](funciones/Whatsapp.md)|
-|Windows|[Windows](funciones/Windows.md)|
+|Archivos |[Archivos](docs/funciones/Archivos.md)|
+|base de datos |[Base de Datos](docs/funciones/BasedeDatos.md)|
+|Compresion |[Comprimir](docs/funciones/Comprimir.md)|
+|Condicionales |[Condiciones](docs/funciones/Condiciones.md)|
+|Consola |[Consola](docs/funciones/Consola.md)|
+|Desencadenadores|[Desencadenadores](docs/funciones/Desencadenadores.md)|
+|Eventos |[Eventos Robot](docs/funciones/EventosRobot.md)|
+|Excel |[Excel](docs/funciones/Excel.md)|
+|Ftp|[Ftp](docs/funciones/Ftp.md)|
+|Funciones fechas|[Funciones Fechas](docs/funciones/FuncionesFechas.md)|
+|Matemáticas |[Funciones Matematicas](docs/funciones/FuncionesMatematicas.md)|
+|Cadenas de texto|[Funciones Strings](docs/funciones/FuncionesStrings.md)|
+|Json|[JSON](docs/funciones/JSON.md)|
+|Loops|[Loop](docs/funciones/Loop.md)|
+|Correo|[Mail](docs/funciones/Mail.md)|
+|Mouse|[Mouse](docs/funciones/Mouse.md)|
+|Ocr|[OCR](docs/funciones/OCR.md)|
+|Pdf|[PDF](docs/funciones/PDF.md)|
+|Seguridad|[Seguridad](docs/funciones/Seguridad.md)|
+|Tablas|[Tablas](docs/funciones/Tablas.md)|
+|Teclado|[Teclado](docs/funciones/Teclado.md)|
+|Temporizador|[Temporizador](docs/funciones/Temporizador.md)|
+|Web|[Web](docs/funciones/Web.md)|
+|Whatsapp|[Whatsapp](docs/funciones/Whatsapp.md)|
+|Windows|[Windows](docs/funciones/Windows.md)|
 
 ### Beneficios ###
 ![componentes](docs/general/Archivos/high_light.jpg)
