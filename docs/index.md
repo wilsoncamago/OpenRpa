@@ -1,4 +1,4 @@
-# Smart Bot Suite - Diseño Flujos Versión 1.1.5.4
+# Smart Bot Suite - Diseño Flujos Versión 1.1.5.5
 
 El instructivo tiene como objetivo explicar el funcionamiento de la plataforma SMART BOT CAPTURA, la cual permite al usuario agilizar y automatizar procesos manuales.
 

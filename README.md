@@ -25,11 +25,17 @@ Software que usa las funcionalidades nativas de las aplicaciones o sistemas para
 
 ### Instalación SDK ###
 
+La solucion "itsellSharedlibrary.sln" tiene un conjunto de librerias para extender la funcionalidad del software [Ver mas](docs/index.md), son complementos que permiten a los desarrolladores crear sus propias funciones e instalarlas en el tablero de automatizacion.
+
 * Clonar repositorio
 * Dependencias packages - Newtonsoft.Json.12.0.3
 * Compilar Visual Studio 2019
 * Copiar la libreria Liper.Publicador.Sharedlibrary.dll en la carpeta root del RPA
-* no remplazar libreria Liper.Publicador.Common.dll
+* No remplazar libreria Liper.Publicador.Common.dll
+
+![componentes](docs/general/Instalacion/sdk.jpg)
+
+
 
 
 ### Documentación ###
