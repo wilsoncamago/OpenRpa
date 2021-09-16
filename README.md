@@ -9,17 +9,17 @@
 OpenRpa son un conjunto de librerias Open Source que se integran con el Software Smar Bot Suite  y extiende funcionalidades nativas de las aplicaciones o sistemas para poder configurar robots y automatizaciones que ejecutan actividades de forma automática.
 
 
+![componentes](docs/general/Archivos/Basedemorpa.gif)
 
-![componentes](docs/general/Archivos/componentes.jpg)
 
- 
+
 
 ### Instalación Smart Bot Suite Bot ###
 
 * [Ver mas](docs/general/Instalacion.md)
-* Descargue el complemento [aquí](https://rpamodel.s3.amazonaws.com/UpdaterRpa.zip) 
+* Descargue  [aquí](https://rpamodel.s3.amazonaws.com/UpdaterRpa.zip) 
 
-![componentes](docs/general/Archivos/componentes-base.png)
+![componentes](docs/general/Archivos/componentes.jpg)
 
 
 
