@@ -6,7 +6,7 @@
 
 
 
-Software que usa las funcionalidades nativas de las aplicaciones o sistemas para poder configurar robots y automatizaciones que ejecutan actividades de forma automática.
+OpenRpa son un conjunto de librerias Open Source que se integran con el Software Smar Bot Suite  y extiende funcionalidades nativas de las aplicaciones o sistemas para poder configurar robots y automatizaciones que ejecutan actividades de forma automática.
 
 
 
@@ -14,7 +14,7 @@ Software que usa las funcionalidades nativas de las aplicaciones o sistemas para
 
  
 
-### Instalación Bot ###
+### Instalación Smart Bot Suite Bot ###
 
 * [Ver mas](docs/general/Instalacion.md)
 * Descargue el complemento [aquí](https://rpamodel.s3.amazonaws.com/UpdaterRpa.zip) 
