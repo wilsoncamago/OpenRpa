@@ -25,18 +25,18 @@ call('{
 ---
 
 
-## Renombrar Archivo
+## Crear Directorio
 
- Renombra archivo
+ Crea directorio windows
 
 
-Para crear de clic:  1. Archivos -->  2. Renombrar Archivo --> 3. indicar Archivo
+Para crear de clic:  1. Archivos -->  2. Crear Directorio --> 3. indicar Directorio
 
-**`Función:`** `renamefile`
+**`Función:`** `createdir`
 
 **`Parámetros :`** 
 
-Archivo: valor 
+Directorio: valor 
 
 
 ---
@@ -65,36 +65,35 @@ call('{
 ---
 
 
-## Eliminar Directorio
+## Eliminar Archivo
 
- Elimina el directorio
+ Elimina archivo si existe
 
 
-Para crear de clic:  1. Archivos -->  2. Eliminar Directorio --> 3. indicar Directorio
+Para crear de clic:  1. Archivos -->  2. Eliminar Archivo --> 3. indicar Archivo
 
-**`Función:`** `removedir`
+**`Función:`** `deletefile`
 
 **`Parámetros :`** 
 
-Directorio: valor 
+Archivo: valor 
 
 
 ---
 
 
-## Mover Archivo
+## Directorio Actual
 
- Corta y pega el archivo entre directorios
+Obtiene el directorio actual
 
 
-Para crear de clic:  1. Archivos -->  2. Mover Archivo --> 3. indicar Archivo, Archivo
+Para crear de clic:  1. Archivos -->  2. Directorio Actual --> 3. indicar Max_params
 
-**`Función:`** `movefile`
+**`Función:`** `getdir`
 
 **`Parámetros :`** 
 
-Archivo: valor 
-Archivo: valor 
+Max_params: valor 
 
 
 ---
@@ -123,17 +122,18 @@ call('{
 ---
 
 
-## Existe Archivo
+## Copiar
 
- Verifica si existe el archivo
+ Copia archivo de directorio a directorio
 
 
-Para crear de clic:  1. Archivos -->  2. Existe Archivo --> 3. indicar Archivo
+Para crear de clic:  1. Archivos -->  2. Copiar --> 3. indicar Archivo, Archivo
 
-**`Función:`** `fileexists`
+**`Función:`** `copyfile`
 
 **`Parámetros :`** 
 
+Archivo: valor 
 Archivo: valor 
 
 
@@ -163,14 +163,14 @@ call('{
 ---
 
 
-## Remover Directorio
+## Existe Directorio
 
- Remueve directorio y todos sus elementos
+ Verifica si existe el directorio
 
 
-Para crear de clic:  1. Archivos -->  2. Remover Directorio --> 3. indicar Directorio
+Para crear de clic:  1. Archivos -->  2. Existe Directorio --> 3. indicar Directorio
 
-**`Función:`** `removedirectory`
+**`Función:`** `direxists`
 
 **`Parámetros :`** 
 
@@ -202,14 +202,31 @@ call('{
 ---
 
 
-## Existe Directorio
+## Existe Archivo
 
- Verifica si existe el directorio
+ Verifica si existe el archivo
 
 
-Para crear de clic:  1. Archivos -->  2. Existe Directorio --> 3. indicar Directorio
+Para crear de clic:  1. Archivos -->  2. Existe Archivo --> 3. indicar Archivo
 
-**`Función:`** `direxists`
+**`Función:`** `fileexists`
+
+**`Parámetros :`** 
+
+Archivo: valor 
+
+
+---
+
+
+## Eliminar Directorio
+
+ Elimina el directorio
+
+
+Para crear de clic:  1. Archivos -->  2. Eliminar Directorio --> 3. indicar Directorio
+
+**`Función:`** `removedir`
 
 **`Parámetros :`** 
 
@@ -219,35 +236,18 @@ Directorio: valor
 ---
 
 
-## Directorio Actual
+## Renombrar Archivo
 
-Obtiene el directorio actual
-
-
-Para crear de clic:  1. Archivos -->  2. Directorio Actual --> 3. indicar Max_params
-
-**`Función:`** `getdir`
-
-**`Parámetros :`** 
-
-Max_params: valor 
+ Renombra archivo
 
 
----
+Para crear de clic:  1. Archivos -->  2. Renombrar Archivo --> 3. indicar Archivo
 
-
-## Crear Directorio
-
- Crea directorio windows
-
-
-Para crear de clic:  1. Archivos -->  2. Crear Directorio --> 3. indicar Directorio
-
-**`Función:`** `createdir`
+**`Función:`** `renamefile`
 
 **`Parámetros :`** 
 
-Directorio: valor 
+Archivo: valor 
 
 
 ---
@@ -440,32 +440,31 @@ Archivo: valor
 ---
 
 
-## Copiar
+## Obtener Nombre Archivo
 
- Copia archivo de directorio a directorio
+ Obtiene el nombre del proceso en ejecución
 
 
-Para crear de clic:  1. Archivos -->  2. Copiar --> 3. indicar Archivo, Archivo
+Para crear de clic:  1. Archivos -->  2. Obtener Nombre Archivo --> 3. indicar Archivo
 
-**`Función:`** `copyfile`
+**`Función:`** `filename`
 
 **`Parámetros :`** 
 
-Archivo: valor 
 Archivo: valor 
 
 
 ---
 
 
-## Directorio Ejecución
+## Remover Directorio
 
- Obtiene el directorio del proceso en ejecución
+ Remueve directorio y todos sus elementos
 
 
-Para crear de clic:  1. Archivos -->  2. Directorio Ejecución --> 3. indicar Directorio
+Para crear de clic:  1. Archivos -->  2. Remover Directorio --> 3. indicar Directorio
 
-**`Función:`** `filepath`
+**`Función:`** `removedirectory`
 
 **`Parámetros :`** 
 
@@ -498,46 +497,60 @@ call('{
 ---
 
 
-## Obtener Nombre Archivo
+## Directorio Ejecución
 
- Obtiene el nombre del proceso en ejecución
+ Obtiene el directorio del proceso en ejecución
 
 
-Para crear de clic:  1. Archivos -->  2. Obtener Nombre Archivo --> 3. indicar Archivo
+Para crear de clic:  1. Archivos -->  2. Directorio Ejecución --> 3. indicar Directorio
 
-**`Función:`** `filename`
+**`Función:`** `filepath`
 
 **`Parámetros :`** 
 
+Directorio: valor 
+
+
+---
+
+
+## Mover Archivo
+
+ Corta y pega el archivo entre directorios
+
+
+Para crear de clic:  1. Archivos -->  2. Mover Archivo --> 3. indicar Archivo, Archivo
+
+**`Función:`** `movefile`
+
+**`Parámetros :`** 
+
+Archivo: valor 
 Archivo: valor 
 
 
 ---
 
 
-## Eliminar Archivo
-
- Elimina archivo si existe
+## Cargar Archivo
 
 
-Para crear de clic:  1. Archivos -->  2. Eliminar Archivo --> 3. indicar Archivo
 
-**`Función:`** `deletefile`
 
-**`Parámetros :`** 
-
-Archivo: valor 
+Para crear de clic:  1. Archivos -->  2. Cargar Archivo
 
 
 ---
 
 
-## Reemplazar Contenido
+## Listar Archivos
 
 
 
 
-Para crear de clic:  1. Archivos -->  2. Reemplazar Contenido
+Para crear de clic:  1. Archivos -->  2. Listar Archivos
+
+**`Función:`** `listararchivos`
 
 
 ---
@@ -576,25 +589,12 @@ Para crear de clic:  1. Archivos -->  2. Abrir
 ---
 
 
-## Cargar Archivo
+## Reemplazar Contenido
 
 
 
 
-Para crear de clic:  1. Archivos -->  2. Cargar Archivo
-
-
----
-
-
-## Listar Archivos
-
-
-
-
-Para crear de clic:  1. Archivos -->  2. Listar Archivos
-
-**`Función:`** `listararchivos`
+Para crear de clic:  1. Archivos -->  2. Reemplazar Contenido
 
 
 ---

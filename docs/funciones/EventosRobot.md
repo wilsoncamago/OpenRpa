@@ -1,53 +1,21 @@
 # Eventos Robot
 
 
-## ImagenMagick
+## Exportar Informe
 
- Ejecuta el comando usando ImagenMagick
-
-
-Para crear de clic:  1. Eventos Robot -->  2. ImagenMagick --> 3. indicar Archivo, Comando
-
-**`Función:`** `commandimage`
-
-**`Parámetros :`** 
-
-Archivo: valor 
-Comando: valor 
+ Exporta informe a formatos  xlsx  xls  docx  doc  tiff  tif  png  jpg  bmp  gif  pdf  html  xml  dbf  ods  odt  ppt  csv  txt  svg  pptx
 
 
----
+Para crear de clic:  1. Eventos Robot -->  2. Exportar Informe --> 3. indicar Reporte,  JSON,  ConTitulos1=si 0=no,  ArchivoSalida
 
-
-## Notificacion
-
- Muetra notificacion en los enventos de windows
-
-
-Para crear de clic:  1. Eventos Robot -->  2. Notificacion --> 3. indicar Value
-
-**`Función:`** `notification`
+**`Función:`** `exportreportrpa`
 
 **`Parámetros :`** 
 
-Value: valor 
-
-
----
-
-
-## Logger
-
- Escribe en current LOG el texto indicado
-
-
-Para crear de clic:  1. Eventos Robot -->  2. Logger --> 3. indicar Value
-
-**`Función:`** `logger`
-
-**`Parámetros :`** 
-
-Value: valor 
+Reporte: valor 
+JSON: valor 
+ConTitulos"1=si 0=no": valor 
+ArchivoSalida: valor 
 
 
 ---
@@ -71,6 +39,44 @@ NomQueue: valor
 ---
 
 
+## QueueCustom
+
+ Adiciona en el Custom Server objeto JSON a queue
+
+
+Para crear de clic:  1. Eventos Robot -->  2. QueueCustom --> 3. indicar JSON, NomQueue
+
+**`Función:`** `queuecustom`
+
+**`Parámetros :`** 
+
+JSON: valor 
+NomQueue: valor 
+
+
+---
+
+
+## Exportar Informe Sql
+
+ Exporta informe desde SQL a formatos  xlsx  xls  docx  doc  tiff  tif  png  jpg  bmp  gif  pdf  html  xml  dbf  ods  odt  ppt  csv  txt  svg  pptx
+
+
+Para crear de clic:  1. Eventos Robot -->  2. Exportar Informe Sql --> 3. indicar Reporte,  sql,  ConTitulos1=si 0=no,  ArchivoSalida
+
+**`Función:`** `exportsqlreportrpa`
+
+**`Parámetros :`** 
+
+Reporte: valor 
+sql: valor 
+ConTitulos"1=si 0=no": valor 
+ArchivoSalida: valor 
+
+
+---
+
+
 ## Cerrar Conexion
 
 Forza el cierre de conexion de BD actual
@@ -88,17 +94,6 @@ Value: valor
 ---
 
 
-## Avanzar Pasos
-
-
-
-
-Para crear de clic:  1. Eventos Robot -->  2. Avanzar Pasos
-
-
----
-
-
 ## Retroceder Pasos
 
 
@@ -110,12 +105,92 @@ Para crear de clic:  1. Eventos Robot -->  2. Retroceder Pasos
 ---
 
 
+## Notificacion
+
+ Muetra notificacion en los enventos de windows
+
+
+Para crear de clic:  1. Eventos Robot -->  2. Notificacion --> 3. indicar Value
+
+**`Función:`** `notification`
+
+**`Parámetros :`** 
+
+Value: valor 
+
+
+---
+
+
+## ImagenMagick
+
+ Ejecuta el comando usando ImagenMagick
+
+
+Para crear de clic:  1. Eventos Robot -->  2. ImagenMagick --> 3. indicar Archivo, Comando
+
+**`Función:`** `commandimage`
+
+**`Parámetros :`** 
+
+Archivo: valor 
+Comando: valor 
+
+
+---
+
+
+## Logger
+
+ Escribe en current LOG el texto indicado
+
+
+Para crear de clic:  1. Eventos Robot -->  2. Logger --> 3. indicar Value
+
+**`Función:`** `logger`
+
+**`Parámetros :`** 
+
+Value: valor 
+
+
+---
+
+
 ## Cargar Plantilla
 
 
 
 
 Para crear de clic:  1. Eventos Robot -->  2. Cargar Plantilla
+
+
+---
+
+
+## Avanzar Pasos
+
+
+
+
+Para crear de clic:  1. Eventos Robot -->  2. Avanzar Pasos
+
+
+---
+
+
+## Obtener valor de variable
+
+ Obtiene el valor actual de la variable
+
+
+Para crear de clic:  1. Eventos Robot -->  2. Obtener valor de variable --> 3. indicar NombreVar
+
+**`Función:`** `getvalvar`
+
+**`Parámetros :`** 
+
+NombreVar: valor 
 
 
 ---
@@ -207,19 +282,21 @@ paso: valor
 ---
 
 
-## QueueCustom
+## Imprimir Informe
 
- Adiciona en el Custom Server objeto JSON a queue
+ Exporta informe a formatos  xlsx  xls  docx  doc  tiff  tif  png  jpg  bmp  gif  pdf  html  xml  dbf  ods  odt  ppt  csv  txt  svg  pptx
 
 
-Para crear de clic:  1. Eventos Robot -->  2. QueueCustom --> 3. indicar JSON, NomQueue
+Para crear de clic:  1. Eventos Robot -->  2. Imprimir Informe --> 3. indicar Reporte,  JSON,  ConTitulos1=si 0=no,  ArchivoSalida
 
-**`Función:`** `queuecustom`
+**`Función:`** `printreportrpa`
 
 **`Parámetros :`** 
 
+Reporte: valor 
 JSON: valor 
-NomQueue: valor 
+ConTitulos"1=si 0=no": valor 
+ArchivoSalida: valor 
 
 
 ---
@@ -259,23 +336,6 @@ NombreVar: valor
 ---
 
 
-## Obtener valor de variable
-
- Obtiene el valor actual de la variable
-
-
-Para crear de clic:  1. Eventos Robot -->  2. Obtener valor de variable --> 3. indicar NombreVar
-
-**`Función:`** `getvalvar`
-
-**`Parámetros :`** 
-
-NombreVar: valor 
-
-
----
-
-
 ## Asignar valor a variable
 
  Asigna el valor a la variable indicada
@@ -289,6 +349,26 @@ Para crear de clic:  1. Eventos Robot -->  2. Asignar valor a variable --> 3. in
 
 NombreVar: valor 
 Value: valor 
+
+
+---
+
+
+## Imprimir Informe Sql
+
+ Exporta informe desde SQL a formatos  xlsx  xls  docx  doc  tiff  tif  png  jpg  bmp  gif  pdf  html  xml  dbf  ods  odt  ppt  csv  txt  svg  pptx
+
+
+Para crear de clic:  1. Eventos Robot -->  2. Imprimir Informe Sql --> 3. indicar Reporte,  sql,  ConTitulos1=si 0=no,  ArchivoSalida
+
+**`Función:`** `printsqlreportrpa`
+
+**`Parámetros :`** 
+
+Reporte: valor 
+sql: valor 
+ConTitulos"1=si 0=no": valor 
+ArchivoSalida: valor 
 
 
 ---

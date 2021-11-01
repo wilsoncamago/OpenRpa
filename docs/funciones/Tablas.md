@@ -1,20 +1,74 @@
 # Tablas
 
 
-## Consulta Sql Directa a Tabla
+## Filtro Data table
 
- Ejecuta consulta a fuente externa e inserta los datos a la tabla destino
+ Filtra la tabla tipo JSON y retorna los registros resultantes
 
 
-Para crear de clic:  1. Tablas -->  2. Consulta Sql Directa a Tabla --> 3. indicar Conexion, Query, Tabla
+Para crear de clic:  1. Tablas -->  2. Filtro Data table --> 3. indicar JsonTable, Filtro
 
-**`Función:`** `querydirecttotable`
+**`Función:`** `filtertable`
 
 **`Parámetros :`** 
 
-Conexion: valor 
-Query: valor 
-Tabla: valor 
+JsonTable: valor 
+Filtro: valor 
+
+
+---
+
+
+## Archivo a tabla
+
+ Convierte un archivo de texto  a registros en una tabla dada
+
+
+Para crear de clic:  1. Tablas -->  2. Archivo a tabla --> 3. indicar Archivo Texto, table, Delimitador
+
+**`Función:`** `filetotable`
+
+**`Parámetros :`** 
+
+Archivo Texto: valor 
+table: valor 
+Delimitador: valor 
+
+
+---
+
+
+## Llave duplicada
+
+ Valida si el KEY esta repetido en la tabla indicada
+
+
+Para crear de clic:  1. Tablas -->  2. Llave duplicada --> 3. indicar NombreTabla, key
+
+**`Función:`** `keyduplicate`
+
+**`Parámetros :`** 
+
+NombreTabla: valor 
+key: valor 
+
+
+---
+
+
+## Archivo a Json tabla
+
+ Convierte un archivo de texto  a Json en una tabla dada
+
+
+Para crear de clic:  1. Tablas -->  2. Archivo a Json tabla --> 3. indicar Archivo Texto, Delimitador
+
+**`Función:`** `filetojsontable`
+
+**`Parámetros :`** 
+
+Archivo Texto: valor 
+Delimitador: valor 
 
 
 ---
@@ -38,19 +92,57 @@ Filtro: valor
 ---
 
 
-## Filtro Data table
+## Obtener datos tabla
 
- Filtra la tabla tipo JSON y retorna los registros resultantes
+ Realiza una consulta en la tabla de datos para obtener todas sus columnas
 
 
-Para crear de clic:  1. Tablas -->  2. Filtro Data table --> 3. indicar JsonTable, Filtro
+Para crear de clic:  1. Tablas -->  2. Obtener datos tabla --> 3. indicar Nombretabla, Columnas, Filtro
 
-**`Función:`** `filtertable`
+**`Función:`** `getdatatable`
 
 **`Parámetros :`** 
 
-JsonTable: valor 
+Nombretabla: valor 
+Columnas: valor 
 Filtro: valor 
+
+
+---
+
+
+## Json To Table
+
+ Convierte un array de JSON  a registros en una tabla dada
+
+
+Para crear de clic:  1. Tablas -->  2. Json To Table --> 3. indicar Json, table
+
+**`Función:`** `jsontotable`
+
+**`Parámetros :`** 
+
+Json: valor 
+table: valor 
+
+
+---
+
+
+## Consulta Sql Directa a Tabla
+
+ Ejecuta consulta a fuente externa e inserta los datos a la tabla destino
+
+
+Para crear de clic:  1. Tablas -->  2. Consulta Sql Directa a Tabla --> 3. indicar Conexion, Query, Tabla
+
+**`Función:`** `querydirecttotable`
+
+**`Parámetros :`** 
+
+Conexion: valor 
+Query: valor 
+Tabla: valor 
 
 
 ---
@@ -75,56 +167,20 @@ Tabla: valor
 ---
 
 
-## Json To Table
+## Consulta Sql a Tabla
 
- Convierte un array de JSON  a registros en una tabla dada
-
-
-Para crear de clic:  1. Tablas -->  2. Json To Table --> 3. indicar Json, table
-
-**`Función:`** `jsontotable`
-
-**`Parámetros :`** 
-
-Json: valor 
-table: valor 
+ Ejecuta consulta a fuente externa e inserta los datos a la tabla destino
 
 
----
+Para crear de clic:  1. Tablas -->  2. Consulta Sql a Tabla --> 3. indicar Conexion, Query, Tabla
 
-
-## Archivo a Json tabla
-
- Convierte un archivo de texto  a Json en una tabla dada
-
-
-Para crear de clic:  1. Tablas -->  2. Archivo a Json tabla --> 3. indicar Archivo Texto, Delimitador
-
-**`Función:`** `filetojsontable`
+**`Función:`** `querytotable`
 
 **`Parámetros :`** 
 
-Archivo Texto: valor 
-Delimitador: valor 
-
-
----
-
-
-## Archivo a tabla
-
- Convierte un archivo de texto  a registros en una tabla dada
-
-
-Para crear de clic:  1. Tablas -->  2. Archivo a tabla --> 3. indicar Archivo Texto, table, Delimitador
-
-**`Función:`** `filetotable`
-
-**`Parámetros :`** 
-
-Archivo Texto: valor 
-table: valor 
-Delimitador: valor 
+Conexion: valor 
+Query: valor 
+Tabla: valor 
 
 
 ---
@@ -150,44 +206,6 @@ Key: valor
 ---
 
 
-## Consulta Sql a Tabla
-
- Ejecuta consulta a fuente externa e inserta los datos a la tabla destino
-
-
-Para crear de clic:  1. Tablas -->  2. Consulta Sql a Tabla --> 3. indicar Conexion, Query, Tabla
-
-**`Función:`** `querytotable`
-
-**`Parámetros :`** 
-
-Conexion: valor 
-Query: valor 
-Tabla: valor 
-
-
----
-
-
-## Obtener datos tabla
-
- Realiza una consulta en la tabla de datos para obtener todas sus columnas
-
-
-Para crear de clic:  1. Tablas -->  2. Obtener datos tabla --> 3. indicar Nombretabla, Columnas, Filtro
-
-**`Función:`** `getdatatable`
-
-**`Parámetros :`** 
-
-Nombretabla: valor 
-Columnas: valor 
-Filtro: valor 
-
-
----
-
-
 ## Each Data table
 
  Itera la tabla tipo JSON y ejecuta la variable por cada registro
@@ -201,24 +219,6 @@ Para crear de clic:  1. Tablas -->  2. Each Data table --> 3. indicar JsonTable,
 
 JsonTable: valor 
 NombreVar: valor 
-
-
----
-
-
-## Llave duplicada
-
- Valida si el KEY esta repetido en la tabla indicada
-
-
-Para crear de clic:  1. Tablas -->  2. Llave duplicada --> 3. indicar NombreTabla, key
-
-**`Función:`** `keyduplicate`
-
-**`Parámetros :`** 
-
-NombreTabla: valor 
-key: valor 
 
 
 ---
