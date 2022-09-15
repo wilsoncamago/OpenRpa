@@ -1,6 +1,102 @@
 # Consola
 
 
+## Ejecutar y esperar proceso
+
+ ejecuta programa con el directorio y parametros
+
+
+Para crear de clic:  1. Consola -->  2. Ejecutar y esperar proceso --> 3. indicar Programa, parametros
+
+**`Función:`** `executewaitprocess`
+
+**`Parámetros :`** 
+
+Programa: valor 
+parametros: valor 
+
+
+---
+
+
+## Linea de comandos
+
+
+
+
+Para crear de clic:  1. Consola -->  2. Linea de comandos
+
+
+---
+
+
+## PowerShell
+
+
+
+
+Para crear de clic:  1. Consola -->  2. PowerShell
+
+
+---
+
+
+## Ejecutar proceso
+
+ ejecuta programa con el directorio y parametros
+
+
+Para crear de clic:  1. Consola -->  2. Ejecutar proceso --> 3. indicar Programa
+
+**`Función:`** `executeprocess`
+
+**`Parámetros :`** 
+
+Programa: valor 
+
+
+---
+
+
+## Ejecutar linea de comandos
+
+ ejecuta Linea de comandos en la consola CMD y espera la ejecución
+
+
+Para crear de clic:  1. Consola -->  2. Ejecutar linea de comandos --> 3. indicar CodeCmd
+
+**`Función:`** `executewaitcmd`
+
+**`Parámetros :`** 
+
+CodeCmd: valor 
+
+
+---
+
+
+## Compile Vb
+
+Compila en lenguaje VisualBasic
+
+
+Para crear de clic:  1. Consola -->  2. Compile Vb --> 3. indicar archivo:
+
+**`classname:`** `ApiFile.CompileVb`
+
+```csharp
+call('{
+    "classname":"ApiFile.CompileVb",
+    value:
+    {
+        "archivo":""
+    }
+}')
+```
+
+---
+
+
 ## Ejecutar Metodos DLL
 
 Ejecuta el metodo de la libreria DLL
@@ -51,24 +147,19 @@ call('{
 ---
 
 
-## Compile Vb
+## Ejecutar consola
 
-Compila en lenguaje VisualBasic
+ ejecuta Linea de comandos en la consola CMD
 
 
-Para crear de clic:  1. Consola -->  2. Compile Vb --> 3. indicar archivo:
+Para crear de clic:  1. Consola -->  2. Ejecutar consola --> 3. indicar CodeCmd
 
-**`classname:`** `ApiFile.CompileVb`
+**`Función:`** `executecmd`
 
-```csharp
-call('{
-    "classname":"ApiFile.CompileVb",
-    value:
-    {
-        "archivo":""
-    }
-}')
-```
+**`Parámetros :`** 
+
+CodeCmd: valor 
+
 
 ---
 
@@ -95,17 +186,6 @@ call('{
 ---
 
 
-## PowerShell
-
-
-
-
-Para crear de clic:  1. Consola -->  2. PowerShell
-
-
----
-
-
 ## Listar Metodos DLL
 
 Carga toda la defincion de una libreria DLL
@@ -124,86 +204,6 @@ call('{
     }
 }')
 ```
-
----
-
-
-## Linea de comandos
-
-
-
-
-Para crear de clic:  1. Consola -->  2. Linea de comandos
-
-
----
-
-
-## Ejecutar y esperar proceso
-
- ejecuta programa con el directorio y parametros
-
-
-Para crear de clic:  1. Consola -->  2. Ejecutar y esperar proceso --> 3. indicar Programa, parametros
-
-**`Función:`** `executewaitprocess`
-
-**`Parámetros :`** 
-
-Programa: valor 
-parametros: valor 
-
-
----
-
-
-## Ejecutar proceso
-
- ejecuta programa con el directorio y parametros
-
-
-Para crear de clic:  1. Consola -->  2. Ejecutar proceso --> 3. indicar Programa
-
-**`Función:`** `executeprocess`
-
-**`Parámetros :`** 
-
-Programa: valor 
-
-
----
-
-
-## Ejecutar consola
-
- ejecuta Linea de comandos en la consola CMD
-
-
-Para crear de clic:  1. Consola -->  2. Ejecutar consola --> 3. indicar CodeCmd
-
-**`Función:`** `executecmd`
-
-**`Parámetros :`** 
-
-CodeCmd: valor 
-
-
----
-
-
-## Ejecutar linea de comandos
-
- ejecuta Linea de comandos en la consola CMD y espera la ejecución
-
-
-Para crear de clic:  1. Consola -->  2. Ejecutar linea de comandos --> 3. indicar CodeCmd
-
-**`Función:`** `executewaitcmd`
-
-**`Parámetros :`** 
-
-CodeCmd: valor 
-
 
 ---
 

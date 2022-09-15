@@ -1,18 +1,42 @@
 # Comprimir
 
 
-## Comprimir Archivos Zip
+## Descomprimir Archivos Zip
 
-Comprime en formato ZIP archivos en un directorio
+Descomprime en formato ZIP archivos en un directorio
 
 
-Para crear de clic:  1. Comprimir -->  2. Comprimir Archivos Zip --> 3. indicar directorio:valor, archivo:
+Para crear de clic:  1. Comprimir -->  2. Descomprimir Archivos Zip --> 3. indicar directorio:valor, archivo:valor, key:
 
-**`classname:`** `ApiFile.ZipCompress`
+**`classname:`** `ApiFile.ZipUnCompress`
 
 ```csharp
 call('{
-    "classname":"ApiFile.ZipCompress",
+    "classname":"ApiFile.ZipUnCompress",
+    value:
+    {
+        "directorio":"",
+        "archivo":"",
+        "key":""
+    }
+}')
+```
+
+---
+
+
+## SobreEscribir Archivos Zip
+
+Sobre Escribe en formato ZIP archivos en un directorio
+
+
+Para crear de clic:  1. Comprimir -->  2. SobreEscribir Archivos Zip --> 3. indicar directorio:valor, archivo:
+
+**`classname:`** `ApiFile.ZipAppendCompress`
+
+```csharp
+call('{
+    "classname":"ApiFile.ZipAppendCompress",
     value:
     {
         "directorio":"",
@@ -36,29 +60,6 @@ Para crear de clic:  1. Comprimir -->  2. Comprimir Archivos Gz --> 3. indicar d
 ```csharp
 call('{
     "classname":"ApiFile.GzCompress",
-    value:
-    {
-        "directorio":"",
-        "archivo":""
-    }
-}')
-```
-
----
-
-
-## SobreEscribir Archivos Zip
-
-Sobre Escribe en formato ZIP archivos en un directorio
-
-
-Para crear de clic:  1. Comprimir -->  2. SobreEscribir Archivos Zip --> 3. indicar directorio:valor, archivo:
-
-**`classname:`** `ApiFile.ZipAppendCompress`
-
-```csharp
-call('{
-    "classname":"ApiFile.ZipAppendCompress",
     value:
     {
         "directorio":"",
@@ -94,23 +95,22 @@ call('{
 ---
 
 
-## Descomprimir Archivos Zip
+## Comprimir Archivos Zip
 
-Descomprime en formato ZIP archivos en un directorio
+Comprime en formato ZIP archivos en un directorio
 
 
-Para crear de clic:  1. Comprimir -->  2. Descomprimir Archivos Zip --> 3. indicar directorio:valor, archivo:valor, key:
+Para crear de clic:  1. Comprimir -->  2. Comprimir Archivos Zip --> 3. indicar directorio:valor, archivo:
 
-**`classname:`** `ApiFile.ZipUnCompress`
+**`classname:`** `ApiFile.ZipCompress`
 
 ```csharp
 call('{
-    "classname":"ApiFile.ZipUnCompress",
+    "classname":"ApiFile.ZipCompress",
     value:
     {
         "directorio":"",
-        "archivo":"",
-        "key":""
+        "archivo":""
     }
 }')
 ```

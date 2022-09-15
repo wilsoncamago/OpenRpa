@@ -1,6 +1,55 @@
 # Excel
 
 
+## Cargar Registro
+
+carga el registro en formato JSON
+
+
+Para crear de clic:  1. Excel -->  2. Cargar Registro --> 3. indicar archivo:valor, hoja:valor, registro:0
+
+**`classname:`** `ApiExcel.GetRow`
+
+```csharp
+call('{
+    "classname":"ApiExcel.GetRow",
+    value:
+    {
+        "archivo":"",
+        "hoja":"",
+        "registro":"0"
+    }
+}')
+```
+
+---
+
+
+## Buscar por Clave
+
+carga el registro en formato JSON
+
+
+Para crear de clic:  1. Excel -->  2. Buscar por Clave --> 3. indicar archivo:valor, hoja:valor, key:A1, registro:0
+
+**`classname:`** `ApiExcel.FindRow`
+
+```csharp
+call('{
+    "classname":"ApiExcel.FindRow",
+    value:
+    {
+        "archivo":"",
+        "hoja":"",
+        "key":"A1",
+        "registro":"0"
+    }
+}')
+```
+
+---
+
+
 ## Cargar Hoja Activa
 
 Se permite la carga de todos los registros de la tabla en formato JSON
@@ -16,6 +65,54 @@ call('{
     value:
     {
         "archivo":""
+    }
+}')
+```
+
+---
+
+
+## Cargar Columna
+
+Carga toda la columna  en formato JSON
+
+
+Para crear de clic:  1. Excel -->  2. Cargar Columna --> 3. indicar archivo:valor, hoja:valor, columna:A
+
+**`classname:`** `ApiExcel.GetColumn`
+
+```csharp
+call('{
+    "classname":"ApiExcel.GetColumn",
+    value:
+    {
+        "archivo":"",
+        "hoja":"",
+        "columna":"A"
+    }
+}')
+```
+
+---
+
+
+## Cargar Formula Columna
+
+Carga toda la columna  en formato JSON
+
+
+Para crear de clic:  1. Excel -->  2. Cargar Formula Columna --> 3. indicar archivo:valor, hoja:valor, columna:A1
+
+**`classname:`** `ApiExcel.GetFormulaColumn`
+
+```csharp
+call('{
+    "classname":"ApiExcel.GetFormulaColumn",
+    value:
+    {
+        "archivo":"",
+        "hoja":"",
+        "columna":"A1"
     }
 }')
 ```
@@ -47,23 +144,29 @@ call('{
 ---
 
 
-## Cargar Registro
+## Unificar Hojas Con Novedad
 
-carga el registro en formato JSON
+Se unifican dos libros de diferente archivo y genera reporte de novedades
 
 
-Para crear de clic:  1. Excel -->  2. Cargar Registro --> 3. indicar archivo:valor, hoja:valor, registro:0
+Para crear de clic:  1. Excel -->  2. Unificar Hojas Con Novedad --> 3. indicar archivorigen:valor, hojaorigen:valor, archivo:valor, hoja:valor, key:A1, edit:true, header:false, hojanovedad:Novedades, archivonovedad:ReporteNovedades_xlsx
 
-**`classname:`** `ApiExcel.GetRow`
+**`classname:`** `ApiExcel.SetAppendBookNov`
 
 ```csharp
 call('{
-    "classname":"ApiExcel.GetRow",
+    "classname":"ApiExcel.SetAppendBookNov",
     value:
     {
+        "archivorigen":"",
+        "hojaorigen":"",
         "archivo":"",
         "hoja":"",
-        "registro":"0"
+        "key":"A1",
+        "edit":true,
+        "header":false,
+        "hojanovedad":"Novedades",
+        "archivonovedad":"ReporteNovedades_xlsx"
     }
 }')
 ```
@@ -122,53 +225,27 @@ call('{
 ---
 
 
-## Agrupar celdas
+## Cargar desde archivo csv
 
-Agrupar celdas de acuerdo al rango de valores dado
-
-
-Para crear de clic:  1. Excel -->  2. Agrupar celdas --> 3. indicar archivo:valor, hoja:valor, key:B20:D20
-
-**`classname:`** `ApiExcel.UpdateMergeSheet`
-
-```csharp
-call('{
-    "classname":"ApiExcel.UpdateMergeSheet",
-    value:
-    {
-        "archivo":"",
-        "hoja":"",
-        "key":"B20:D20"
-    }
-}')
-```
-
----
+Carga los datos a excel desde un archivo de texto csv usar el atributo "columna" para indicar el numero de columna que debe ser tipo numericas y "formato" para los datos tipo fecha
 
 
-## Unificar Hojas Con Novedad
+Para crear de clic:  1. Excel -->  2. Cargar desde archivo csv --> 3. indicar archivo:valor, hoja:valor, key:A1,  archivorigen:valor, delimiter:;, columna:valor, formato:
 
-Se unifican dos libros de diferente archivo y genera reporte de novedades
-
-
-Para crear de clic:  1. Excel -->  2. Unificar Hojas Con Novedad --> 3. indicar archivorigen:valor, hojaorigen:valor, archivo:valor, hoja:valor, key:A1, edit:true, header:false, hojanovedad:Novedades, archivonovedad:ReporteNovedades_xlsx
-
-**`classname:`** `ApiExcel.SetAppendBookNov`
+**`classname:`** `ApiExcel.LoadCsvFileRowSheet`
 
 ```csharp
 call('{
-    "classname":"ApiExcel.SetAppendBookNov",
+    "classname":"ApiExcel.LoadCsvFileRowSheet",
     value:
     {
-        "archivorigen":"",
-        "hojaorigen":"",
         "archivo":"",
         "hoja":"",
         "key":"A1",
-        "edit":true,
-        "header":false,
-        "hojanovedad":"Novedades",
-        "archivonovedad":"ReporteNovedades_xlsx"
+        "archivorigen":"",
+        "delimiter":";",
+        "columna":"",
+        "formato":""
     }
 }')
 ```
@@ -176,27 +253,94 @@ call('{
 ---
 
 
-## Actualizar Celda por key
+## Buscar Celda por key
 
-Busca el registro por el KEY y actualiza el valor de la columna
+Busca el registro por el KEY y retorna el valor de la columna
 
 
-Para crear de clic:  1. Excel -->  2. Actualizar Celda por key --> 3. indicar archivo:valor, hoja:valor, key:A1,  valuekey:valor,  columna:valor, text:valor, formato:
+Para crear de clic:  1. Excel -->  2. Buscar Celda por key --> 3. indicar archivo:valor, hoja:valor, key:A1,  valuekey:valor,  columna:A2
 
-**`classname:`** `ApiExcel.UpdateRowSheet`
+**`classname:`** `ApiExcel.FindCellRowSheet`
 
 ```csharp
 call('{
-    "classname":"ApiExcel.UpdateRowSheet",
+    "classname":"ApiExcel.FindCellRowSheet",
     value:
     {
         "archivo":"",
         "hoja":"",
         "key":"A1",
         "valuekey":"",
+        "columna":"A2"
+    }
+}')
+```
+
+---
+
+
+## Reemplazar Registros (OLEBD)
+
+se reemplazan datos al excel en formato JSON
+
+
+Para crear de clic:  1. Excel -->  2. Reemplazar Registros (OLEBD) --> 3. indicar archivo:valor, hoja:valor, data:[col:1, col2:2, col:1, col2:2]
+
+**`classname:`** `ApiExcel.SetRowsSheetsOle`
+
+```csharp
+call('{
+    "classname":"ApiExcel.SetRowsSheetsOle",
+    value:
+    {
+        "archivo":"",
+        "hoja":"",
+        "data":
+        [
+            {
+                "col":"1",
+                "col2":"2"
+            },
+            {
+                "col":"1",
+                "col2":"2"
+            }
+        ]
+    }
+}')
+```
+
+---
+
+
+## Agregar Registros (OLEBD)
+
+se agregar los registros datos al excel en formato JSON
+
+
+Para crear de clic:  1. Excel -->  2. Agregar Registros (OLEBD) --> 3. indicar archivo:valor, hoja:valor, columna:valor, data:[col:1, col2:2, col:1, col2:2]
+
+**`classname:`** `ApiExcel.AddRowsSheetsOle`
+
+```csharp
+call('{
+    "classname":"ApiExcel.AddRowsSheetsOle",
+    value:
+    {
+        "archivo":"",
+        "hoja":"",
         "columna":"",
-        "text":"",
-        "formato":""
+        "data":
+        [
+            {
+                "col":"1",
+                "col2":"2"
+            },
+            {
+                "col":"1",
+                "col2":"2"
+            }
+        ]
     }
 }')
 ```
@@ -263,25 +407,22 @@ call('{
 ---
 
 
-## Buscar Celda por key
+## Comando SQL (OLEBD)
 
-Busca el registro por el KEY y retorna el valor de la columna
+Ejecuta un SQL command en el archivo de EXCEL
 
 
-Para crear de clic:  1. Excel -->  2. Buscar Celda por key --> 3. indicar archivo:valor, hoja:valor, key:A1,  valuekey:valor,  columna:A2
+Para crear de clic:  1. Excel -->  2. Comando SQL (OLEBD) --> 3. indicar archivo:valor, text:
 
-**`classname:`** `ApiExcel.FindCellRowSheet`
+**`classname:`** `ApiExcel.SetCommnaOle`
 
 ```csharp
 call('{
-    "classname":"ApiExcel.FindCellRowSheet",
+    "classname":"ApiExcel.SetCommnaOle",
     value:
     {
         "archivo":"",
-        "hoja":"",
-        "key":"A1",
-        "valuekey":"",
-        "columna":"A2"
+        "text":""
     }
 }')
 ```
@@ -341,34 +482,27 @@ call('{
 ---
 
 
-## Agregar Registros (OLEBD)
+## Actualizar Celda por key
 
-se agregar los registros datos al excel en formato JSON
+Busca el registro por el KEY y actualiza el valor de la columna
 
 
-Para crear de clic:  1. Excel -->  2. Agregar Registros (OLEBD) --> 3. indicar archivo:valor, hoja:valor, columna:valor, data:[col:1, col2:2, col:1, col2:2]
+Para crear de clic:  1. Excel -->  2. Actualizar Celda por key --> 3. indicar archivo:valor, hoja:valor, key:A1,  valuekey:valor,  columna:valor, text:valor, formato:
 
-**`classname:`** `ApiExcel.AddRowsSheetsOle`
+**`classname:`** `ApiExcel.UpdateRowSheet`
 
 ```csharp
 call('{
-    "classname":"ApiExcel.AddRowsSheetsOle",
+    "classname":"ApiExcel.UpdateRowSheet",
     value:
     {
         "archivo":"",
         "hoja":"",
+        "key":"A1",
+        "valuekey":"",
         "columna":"",
-        "data":
-        [
-            {
-                "col":"1",
-                "col2":"2"
-            },
-            {
-                "col":"1",
-                "col2":"2"
-            }
-        ]
+        "text":"",
+        "formato":""
     }
 }')
 ```
@@ -458,22 +592,23 @@ call('{
 ---
 
 
-## Conteo Columnas
+## Cargar Hoja Tabla Sql
 
-Obtiene la cantidad de columnas de la hoja
+Carga los datos de una hoja de excel y los inserta a tabla en SQL
 
 
-Para crear de clic:  1. Excel -->  2. Conteo Columnas --> 3. indicar archivo:valor, hoja:
+Para crear de clic:  1. Excel -->  2. Cargar Hoja Tabla Sql --> 3. indicar archivo:valor, hoja:valor, tabla:
 
-**`classname:`** `ApiExcel.CountColumnSheet`
+**`classname:`** `ApiExcel.SetDataSqlLite`
 
 ```csharp
 call('{
-    "classname":"ApiExcel.CountColumnSheet",
+    "classname":"ApiExcel.SetDataSqlLite",
     value:
     {
         "archivo":"",
-        "hoja":""
+        "hoja":"",
+        "tabla":""
     }
 }')
 ```
@@ -481,22 +616,22 @@ call('{
 ---
 
 
-## Conteo Registros
+## Cargar Xml Tabla Sql
 
-Obtiene la cantidad de registros de la hoja
+Carga XML de formato EXCEL a tabla en SQL
 
 
-Para crear de clic:  1. Excel -->  2. Conteo Registros --> 3. indicar archivo:valor, hoja:
+Para crear de clic:  1. Excel -->  2. Cargar Xml Tabla Sql --> 3. indicar archivo:valor, tabla:
 
-**`classname:`** `ApiExcel.CountRowSheet`
+**`classname:`** `ApiExcel.ConvertXmlToSqltTable`
 
 ```csharp
 call('{
-    "classname":"ApiExcel.CountRowSheet",
+    "classname":"ApiExcel.ConvertXmlToSqltTable",
     value:
     {
         "archivo":"",
-        "hoja":""
+        "tabla":""
     }
 }')
 ```
@@ -504,22 +639,48 @@ call('{
 ---
 
 
-## Ultima Direccion
+## Cargar Hoja Tabla SqlLite base
 
-Obtiene la direccion final de la hoja de excel
+Carga los datos de una hoja de excel y los inserta a tabla en SQL Lite de forma nativa
 
 
-Para crear de clic:  1. Excel -->  2. Ultima Direccion --> 3. indicar archivo:valor, hoja:
+Para crear de clic:  1. Excel -->  2. Cargar Hoja Tabla SqlLite base --> 3. indicar archivo:valor, hoja:valor, tabla:valor, database:
 
-**`classname:`** `ApiExcel.AdressEndSheet`
+**`classname:`** `ApiExcel.SetDataSqlLiteBase`
 
 ```csharp
 call('{
-    "classname":"ApiExcel.AdressEndSheet",
+    "classname":"ApiExcel.SetDataSqlLiteBase",
     value:
     {
         "archivo":"",
-        "hoja":""
+        "hoja":"",
+        "tabla":"",
+        "database":""
+    }
+}')
+```
+
+---
+
+
+## Cargar Hoja Csv
+
+Carga los datos de una hoja de excel y los inserta e archivo CSV deliminado por ;
+
+
+Para crear de clic:  1. Excel -->  2. Cargar Hoja Csv --> 3. indicar archivo:valor, hoja:valor, archivodestino:
+
+**`classname:`** `ApiExcel.SetDataCsv`
+
+```csharp
+call('{
+    "classname":"ApiExcel.SetDataCsv",
+    value:
+    {
+        "archivo":"",
+        "hoja":"",
+        "archivodestino":""
     }
 }')
 ```
@@ -550,34 +711,22 @@ call('{
 ---
 
 
-## Agregar Rango Registros
+## Xml to csv
 
-se reemplazan datos en rango de excel en formato JSON
+Conviente de forma nativa archivo XML a formato csv
 
 
-Para crear de clic:  1. Excel -->  2. Agregar Rango Registros --> 3. indicar archivo:valor, hoja:valor, columna:A1, data:[col:1, col2:2, col:1, col2:2]
+Para crear de clic:  1. Excel -->  2. Xml to csv --> 3. indicar archivo:valor, archivodestino:
 
-**`classname:`** `ApiExcel.SetRangeRowsSheets`
+**`classname:`** `ApiExcel.XmlExcelToCsv`
 
 ```csharp
 call('{
-    "classname":"ApiExcel.SetRangeRowsSheets",
+    "classname":"ApiExcel.XmlExcelToCsv",
     value:
     {
         "archivo":"",
-        "hoja":"",
-        "columna":"A1",
-        "data":
-        [
-            {
-                "col":"1",
-                "col2":"2"
-            },
-            {
-                "col":"1",
-                "col2":"2"
-            }
-        ]
+        "archivodestino":""
     }
 }')
 ```
@@ -585,18 +734,18 @@ call('{
 ---
 
 
-## Agregar Registros Texto
+## Reemplazar Registros (EPPLUS)
 
-se adicionan datos al excel en formato JSON en tipo texto
+se reemplazan datos al excel en formato JSON usando la libreria epplus
 
 
-Para crear de clic:  1. Excel -->  2. Agregar Registros Texto --> 3. indicar archivo:valor, hoja:valor, data:[col:1, col2:2, col:1, col2:2]
+Para crear de clic:  1. Excel -->  2. Reemplazar Registros (EPPLUS) --> 3. indicar archivo:valor, hoja:valor, data:[col:1, col2:2, col:1, col2:2]
 
-**`classname:`** `ApiExcel.AddRowsSheetsTextPlus`
+**`classname:`** `ApiExcel.SetRowsSheetsPlus`
 
 ```csharp
 call('{
-    "classname":"ApiExcel.AddRowsSheetsTextPlus",
+    "classname":"ApiExcel.SetRowsSheetsPlus",
     value:
     {
         "archivo":"",
@@ -653,18 +802,18 @@ call('{
 ---
 
 
-## Reemplazar Registros (EPPLUS)
+## Agregar Registros Texto
 
-se reemplazan datos al excel en formato JSON usando la libreria epplus
+se adicionan datos al excel en formato JSON en tipo texto
 
 
-Para crear de clic:  1. Excel -->  2. Reemplazar Registros (EPPLUS) --> 3. indicar archivo:valor, hoja:valor, data:[col:1, col2:2, col:1, col2:2]
+Para crear de clic:  1. Excel -->  2. Agregar Registros Texto --> 3. indicar archivo:valor, hoja:valor, data:[col:1, col2:2, col:1, col2:2]
 
-**`classname:`** `ApiExcel.SetRowsSheetsPlus`
+**`classname:`** `ApiExcel.AddRowsSheetsTextPlus`
 
 ```csharp
 call('{
-    "classname":"ApiExcel.SetRowsSheetsPlus",
+    "classname":"ApiExcel.AddRowsSheetsTextPlus",
     value:
     {
         "archivo":"",
@@ -687,45 +836,23 @@ call('{
 ---
 
 
-## Xml to csv
+## Agregar Rango Registros
 
-Conviente de forma nativa archivo XML a formato csv
-
-
-Para crear de clic:  1. Excel -->  2. Xml to csv --> 3. indicar archivo:valor, archivodestino:
-
-**`classname:`** `ApiExcel.XmlExcelToCsv`
-
-```csharp
-call('{
-    "classname":"ApiExcel.XmlExcelToCsv",
-    value:
-    {
-        "archivo":"",
-        "archivodestino":""
-    }
-}')
-```
-
----
+se reemplazan datos en rango de excel en formato JSON
 
 
-## Reemplazar Registros (OLEBD)
+Para crear de clic:  1. Excel -->  2. Agregar Rango Registros --> 3. indicar archivo:valor, hoja:valor, columna:A1, data:[col:1, col2:2, col:1, col2:2]
 
-se reemplazan datos al excel en formato JSON
-
-
-Para crear de clic:  1. Excel -->  2. Reemplazar Registros (OLEBD) --> 3. indicar archivo:valor, hoja:valor, data:[col:1, col2:2, col:1, col2:2]
-
-**`classname:`** `ApiExcel.SetRowsSheetsOle`
+**`classname:`** `ApiExcel.SetRangeRowsSheets`
 
 ```csharp
 call('{
-    "classname":"ApiExcel.SetRowsSheetsOle",
+    "classname":"ApiExcel.SetRangeRowsSheets",
     value:
     {
         "archivo":"",
         "hoja":"",
+        "columna":"A1",
         "data":
         [
             {
@@ -737,173 +864,6 @@ call('{
                 "col2":"2"
             }
         ]
-    }
-}')
-```
-
----
-
-
-## Cargar Hoja Csv
-
-Carga los datos de una hoja de excel y los inserta e archivo CSV deliminado por ;
-
-
-Para crear de clic:  1. Excel -->  2. Cargar Hoja Csv --> 3. indicar archivo:valor, hoja:valor, archivodestino:
-
-**`classname:`** `ApiExcel.SetDataCsv`
-
-```csharp
-call('{
-    "classname":"ApiExcel.SetDataCsv",
-    value:
-    {
-        "archivo":"",
-        "hoja":"",
-        "archivodestino":""
-    }
-}')
-```
-
----
-
-
-## Cargar Hoja Tabla SqlLite base
-
-Carga los datos de una hoja de excel y los inserta a tabla en SQL Lite de forma nativa
-
-
-Para crear de clic:  1. Excel -->  2. Cargar Hoja Tabla SqlLite base --> 3. indicar archivo:valor, hoja:valor, tabla:valor, database:
-
-**`classname:`** `ApiExcel.SetDataSqlLiteBase`
-
-```csharp
-call('{
-    "classname":"ApiExcel.SetDataSqlLiteBase",
-    value:
-    {
-        "archivo":"",
-        "hoja":"",
-        "tabla":"",
-        "database":""
-    }
-}')
-```
-
----
-
-
-## Cargar Xml Tabla Sql
-
-Carga XML de formato EXCEL a tabla en SQL
-
-
-Para crear de clic:  1. Excel -->  2. Cargar Xml Tabla Sql --> 3. indicar archivo:valor, tabla:
-
-**`classname:`** `ApiExcel.ConvertXmlToSqltTable`
-
-```csharp
-call('{
-    "classname":"ApiExcel.ConvertXmlToSqltTable",
-    value:
-    {
-        "archivo":"",
-        "tabla":""
-    }
-}')
-```
-
----
-
-
-## Cargar Hoja Tabla Sql
-
-Carga los datos de una hoja de excel y los inserta a tabla en SQL
-
-
-Para crear de clic:  1. Excel -->  2. Cargar Hoja Tabla Sql --> 3. indicar archivo:valor, hoja:valor, tabla:
-
-**`classname:`** `ApiExcel.SetDataSqlLite`
-
-```csharp
-call('{
-    "classname":"ApiExcel.SetDataSqlLite",
-    value:
-    {
-        "archivo":"",
-        "hoja":"",
-        "tabla":""
-    }
-}')
-```
-
----
-
-
-## Comando SQL (OLEBD)
-
-Ejecuta un SQL command en el archivo de EXCEL
-
-
-Para crear de clic:  1. Excel -->  2. Comando SQL (OLEBD) --> 3. indicar archivo:valor, text:
-
-**`classname:`** `ApiExcel.SetCommnaOle`
-
-```csharp
-call('{
-    "classname":"ApiExcel.SetCommnaOle",
-    value:
-    {
-        "archivo":"",
-        "text":""
-    }
-}')
-```
-
----
-
-
-## Buscar por Clave
-
-carga el registro en formato JSON
-
-
-Para crear de clic:  1. Excel -->  2. Buscar por Clave --> 3. indicar archivo:valor, hoja:valor, key:A1, registro:0
-
-**`classname:`** `ApiExcel.FindRow`
-
-```csharp
-call('{
-    "classname":"ApiExcel.FindRow",
-    value:
-    {
-        "archivo":"",
-        "hoja":"",
-        "key":"A1",
-        "registro":"0"
-    }
-}')
-```
-
----
-
-
-## Primera Direccion
-
-Obtiene la direccion inicial de la hoja de excel
-
-
-Para crear de clic:  1. Excel -->  2. Primera Direccion --> 3. indicar archivo:valor, hoja:
-
-**`classname:`** `ApiExcel.AdressStartSheet`
-
-```csharp
-call('{
-    "classname":"ApiExcel.AdressStartSheet",
-    value:
-    {
-        "archivo":"",
-        "hoja":""
     }
 }')
 ```
@@ -928,32 +888,6 @@ call('{
         "archivo":"",
         "hoja":"",
         "columna":"A1"
-    }
-}')
-```
-
----
-
-
-## Cargar desde archivo texto
-
-Carga los datos a excel desde un archivo de texto
-
-
-Para crear de clic:  1. Excel -->  2. Cargar desde archivo texto --> 3. indicar archivo:valor, hoja:valor, key:A1,  archivorigen:valor, delimiter:;
-
-**`classname:`** `ApiExcel.LoadTextFileRowSheet`
-
-```csharp
-call('{
-    "classname":"ApiExcel.LoadTextFileRowSheet",
-    value:
-    {
-        "archivo":"",
-        "hoja":"",
-        "key":"A1",
-        "archivorigen":"",
-        "delimiter":";"
     }
 }')
 ```
@@ -1017,27 +951,23 @@ call('{
 ---
 
 
-## Cargar desde archivo csv
+## Cargar Formula Celda
 
-Carga los datos a excel desde un archivo de texto csv usar el atributo "columna" para indicar el numero de columna que debe ser tipo numericas y "formato" para los datos tipo fecha
+Carga la formula de celda en formato JSON
 
 
-Para crear de clic:  1. Excel -->  2. Cargar desde archivo csv --> 3. indicar archivo:valor, hoja:valor, key:A1,  archivorigen:valor, delimiter:;, columna:valor, formato:
+Para crear de clic:  1. Excel -->  2. Cargar Formula Celda --> 3. indicar archivo:valor, hoja:valor, columna:A1
 
-**`classname:`** `ApiExcel.LoadCsvFileRowSheet`
+**`classname:`** `ApiExcel.GetFormulaCell`
 
 ```csharp
 call('{
-    "classname":"ApiExcel.LoadCsvFileRowSheet",
+    "classname":"ApiExcel.GetFormulaCell",
     value:
     {
         "archivo":"",
         "hoja":"",
-        "key":"A1",
-        "archivorigen":"",
-        "delimiter":";",
-        "columna":"",
-        "formato":""
+        "columna":"A1"
     }
 }')
 ```
@@ -1045,25 +975,69 @@ call('{
 ---
 
 
-## Cargar desde texto
+## Cargar Nombre Libros
 
-Carga los datos a excel desde una cadena delimitada
+Se permite la carga de todos los nombres de hojas en formato JSON
 
 
-Para crear de clic:  1. Excel -->  2. Cargar desde texto --> 3. indicar archivo:valor, hoja:valor, key:A1,  text:valor, delimiter:;
+Para crear de clic:  1. Excel -->  2. Cargar Nombre Libros --> 3. indicar archivo:
 
-**`classname:`** `ApiExcel.LoadTextRowSheet`
+**`classname:`** `ApiExcel.GetNameSheets`
 
 ```csharp
 call('{
-    "classname":"ApiExcel.LoadTextRowSheet",
+    "classname":"ApiExcel.GetNameSheets",
+    value:
+    {
+        "archivo":""
+    }
+}')
+```
+
+---
+
+
+## Cargar Rango
+
+Se permite la carga de todos datos del rango selecionado en formato JSON
+
+
+Para crear de clic:  1. Excel -->  2. Cargar Rango --> 3. indicar archivo:valor, hoja:valor, rango:A1:B2
+
+**`classname:`** `ApiExcel.GetRangeSheets`
+
+```csharp
+call('{
+    "classname":"ApiExcel.GetRangeSheets",
     value:
     {
         "archivo":"",
         "hoja":"",
-        "key":"A1",
-        "text":"",
-        "delimiter":";"
+        "rango":"A1:B2"
+    }
+}')
+```
+
+---
+
+
+## Cargar Ultimo Rango
+
+Se permite la carga de todos datos del origen al ultimo rango en formato JSON
+
+
+Para crear de clic:  1. Excel -->  2. Cargar Ultimo Rango --> 3. indicar archivo:valor, hoja:valor, rango:A1
+
+**`classname:`** `ApiExcel.GetLastRangeSheets`
+
+```csharp
+call('{
+    "classname":"ApiExcel.GetLastRangeSheets",
+    value:
+    {
+        "archivo":"",
+        "hoja":"",
+        "rango":"A1"
     }
 }')
 ```
@@ -1107,23 +1081,23 @@ call('{
 ---
 
 
-## Cargar Ultimo Rango
+## Desbloquear Archivo
 
-Se permite la carga de todos datos del origen al ultimo rango en formato JSON
+Desbloquea archivo con el password indicado y lo guarda en el documento de destino
 
 
-Para crear de clic:  1. Excel -->  2. Cargar Ultimo Rango --> 3. indicar archivo:valor, hoja:valor, rango:A1
+Para crear de clic:  1. Excel -->  2. Desbloquear Archivo --> 3. indicar archivo:valor, clave:valor, archivodestino:
 
-**`classname:`** `ApiExcel.GetLastRangeSheets`
+**`classname:`** `ApiExcel.UnlockExcel`
 
 ```csharp
 call('{
-    "classname":"ApiExcel.GetLastRangeSheets",
+    "classname":"ApiExcel.UnlockExcel",
     value:
     {
         "archivo":"",
-        "hoja":"",
-        "rango":"A1"
+        "clave":"",
+        "archivodestino":""
     }
 }')
 ```
@@ -1131,23 +1105,24 @@ call('{
 ---
 
 
-## Cargar Rango
+## Bloquear Archivo
 
-Se permite la carga de todos datos del rango selecionado en formato JSON
+Bloquea archivo con el password indicado y lo guarda en el documento de destino
 
 
-Para crear de clic:  1. Excel -->  2. Cargar Rango --> 3. indicar archivo:valor, hoja:valor, rango:A1:B2
+Para crear de clic:  1. Excel -->  2. Bloquear Archivo --> 3. indicar archivo:valor, clave:valor, archivodestino:valor, clavedestino:
 
-**`classname:`** `ApiExcel.GetRangeSheets`
+**`classname:`** `ApiExcel.LockExcel`
 
 ```csharp
 call('{
-    "classname":"ApiExcel.GetRangeSheets",
+    "classname":"ApiExcel.LockExcel",
     value:
     {
         "archivo":"",
-        "hoja":"",
-        "rango":"A1:B2"
+        "clave":"",
+        "archivodestino":"",
+        "clavedestino":""
     }
 }')
 ```
@@ -1155,21 +1130,25 @@ call('{
 ---
 
 
-## Cargar Nombre Libros
+## Cargar desde texto
 
-Se permite la carga de todos los nombres de hojas en formato JSON
+Carga los datos a excel desde una cadena delimitada
 
 
-Para crear de clic:  1. Excel -->  2. Cargar Nombre Libros --> 3. indicar archivo:
+Para crear de clic:  1. Excel -->  2. Cargar desde texto --> 3. indicar archivo:valor, hoja:valor, key:A1,  text:valor, delimiter:;
 
-**`classname:`** `ApiExcel.GetNameSheets`
+**`classname:`** `ApiExcel.LoadTextRowSheet`
 
 ```csharp
 call('{
-    "classname":"ApiExcel.GetNameSheets",
+    "classname":"ApiExcel.LoadTextRowSheet",
     value:
     {
-        "archivo":""
+        "archivo":"",
+        "hoja":"",
+        "key":"A1",
+        "text":"",
+        "delimiter":";"
     }
 }')
 ```
@@ -1177,23 +1156,22 @@ call('{
 ---
 
 
-## Cargar Formula Celda
+## Conteo Columnas
 
-Carga la formula de celda en formato JSON
+Obtiene la cantidad de columnas de la hoja
 
 
-Para crear de clic:  1. Excel -->  2. Cargar Formula Celda --> 3. indicar archivo:valor, hoja:valor, columna:A1
+Para crear de clic:  1. Excel -->  2. Conteo Columnas --> 3. indicar archivo:valor, hoja:
 
-**`classname:`** `ApiExcel.GetFormulaCell`
+**`classname:`** `ApiExcel.CountColumnSheet`
 
 ```csharp
 call('{
-    "classname":"ApiExcel.GetFormulaCell",
+    "classname":"ApiExcel.CountColumnSheet",
     value:
     {
         "archivo":"",
-        "hoja":"",
-        "columna":"A1"
+        "hoja":""
     }
 }')
 ```
@@ -1201,23 +1179,91 @@ call('{
 ---
 
 
-## Cargar Formula Columna
+## Totalizar Hoja
 
-Carga toda la columna  en formato JSON
+Totaliza todas las columnas de la hoja de excel
 
 
-Para crear de clic:  1. Excel -->  2. Cargar Formula Columna --> 3. indicar archivo:valor, hoja:valor, columna:A1
+Para crear de clic:  1. Excel -->  2. Totalizar Hoja --> 3. indicar archivo:valor, hoja:
 
-**`classname:`** `ApiExcel.GetFormulaColumn`
+**`classname:`** `ApiExcel.SummSheet`
 
 ```csharp
 call('{
-    "classname":"ApiExcel.GetFormulaColumn",
+    "classname":"ApiExcel.SummSheet",
     value:
     {
         "archivo":"",
-        "hoja":"",
-        "columna":"A1"
+        "hoja":""
+    }
+}')
+```
+
+---
+
+
+## Conteo Registros
+
+Obtiene la cantidad de registros de la hoja
+
+
+Para crear de clic:  1. Excel -->  2. Conteo Registros --> 3. indicar archivo:valor, hoja:
+
+**`classname:`** `ApiExcel.CountRowSheet`
+
+```csharp
+call('{
+    "classname":"ApiExcel.CountRowSheet",
+    value:
+    {
+        "archivo":"",
+        "hoja":""
+    }
+}')
+```
+
+---
+
+
+## Ultima Direccion
+
+Obtiene la direccion final de la hoja de excel
+
+
+Para crear de clic:  1. Excel -->  2. Ultima Direccion --> 3. indicar archivo:valor, hoja:
+
+**`classname:`** `ApiExcel.AdressEndSheet`
+
+```csharp
+call('{
+    "classname":"ApiExcel.AdressEndSheet",
+    value:
+    {
+        "archivo":"",
+        "hoja":""
+    }
+}')
+```
+
+---
+
+
+## Primera Direccion
+
+Obtiene la direccion inicial de la hoja de excel
+
+
+Para crear de clic:  1. Excel -->  2. Primera Direccion --> 3. indicar archivo:valor, hoja:
+
+**`classname:`** `ApiExcel.AdressStartSheet`
+
+```csharp
+call('{
+    "classname":"ApiExcel.AdressStartSheet",
+    value:
+    {
+        "archivo":"",
+        "hoja":""
     }
 }')
 ```
@@ -1248,23 +1294,25 @@ call('{
 ---
 
 
-## Cargar Columna
+## Cargar desde archivo texto
 
-Carga toda la columna  en formato JSON
+Carga los datos a excel desde un archivo de texto
 
 
-Para crear de clic:  1. Excel -->  2. Cargar Columna --> 3. indicar archivo:valor, hoja:valor, columna:A
+Para crear de clic:  1. Excel -->  2. Cargar desde archivo texto --> 3. indicar archivo:valor, hoja:valor, key:A1,  archivorigen:valor, delimiter:;
 
-**`classname:`** `ApiExcel.GetColumn`
+**`classname:`** `ApiExcel.LoadTextFileRowSheet`
 
 ```csharp
 call('{
-    "classname":"ApiExcel.GetColumn",
+    "classname":"ApiExcel.LoadTextFileRowSheet",
     value:
     {
         "archivo":"",
         "hoja":"",
-        "columna":"A"
+        "key":"A1",
+        "archivorigen":"",
+        "delimiter":";"
     }
 }')
 ```
@@ -1272,47 +1320,23 @@ call('{
 ---
 
 
-## Actualizar Formato
+## Agrupar celdas
 
-actualiza el valor del formato en la columna
+Agrupar celdas de acuerdo al rango de valores dado
 
 
-Para crear de clic:  1. Excel -->  2. Actualizar Formato --> 3. indicar archivo:valor, hoja:valor, key:A1:A5, text:##0
+Para crear de clic:  1. Excel -->  2. Agrupar celdas --> 3. indicar archivo:valor, hoja:valor, key:B20:D20
 
-**`classname:`** `ApiExcel.UpdateFormatSheet`
+**`classname:`** `ApiExcel.UpdateMergeSheet`
 
 ```csharp
 call('{
-    "classname":"ApiExcel.UpdateFormatSheet",
+    "classname":"ApiExcel.UpdateMergeSheet",
     value:
     {
         "archivo":"",
         "hoja":"",
-        "key":"A1:A5",
-        "text":"##0"
-    }
-}')
-```
-
----
-
-
-## Totalizar Hoja
-
-Totaliza todas las columnas de la hoja de excel
-
-
-Para crear de clic:  1. Excel -->  2. Totalizar Hoja --> 3. indicar archivo:valor, hoja:
-
-**`classname:`** `ApiExcel.SummSheet`
-
-```csharp
-call('{
-    "classname":"ApiExcel.SummSheet",
-    value:
-    {
-        "archivo":"",
-        "hoja":""
+        "key":"B20:D20"
     }
 }')
 ```
@@ -1361,6 +1385,31 @@ call('{
         "archivo":"",
         "hoja":"",
         "key":"A1"
+    }
+}')
+```
+
+---
+
+
+## Actualizar Formato
+
+actualiza el valor del formato en la columna
+
+
+Para crear de clic:  1. Excel -->  2. Actualizar Formato --> 3. indicar archivo:valor, hoja:valor, key:A1:A5, text:##0
+
+**`classname:`** `ApiExcel.UpdateFormatSheet`
+
+```csharp
+call('{
+    "classname":"ApiExcel.UpdateFormatSheet",
+    value:
+    {
+        "archivo":"",
+        "hoja":"",
+        "key":"A1:A5",
+        "text":"##0"
     }
 }')
 ```

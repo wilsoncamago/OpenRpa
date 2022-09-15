@@ -1,6 +1,65 @@
 # Tablas
 
 
+## Conciliar tabla
+
+ Concilia informacion de dos tablas en SQL a partir de las columnas definidas
+
+
+Para crear de clic:  1. Tablas -->  2. Conciliar tabla --> 3. indicar TablaOrigen, ColumnasOrigen, TablaDestino, ColumnasDestino, Key
+
+**`Función:`** `concilietable`
+
+**`Parámetros :`** 
+
+TablaOrigen: valor 
+ColumnasOrigen: valor 
+TablaDestino: valor 
+ColumnasDestino: valor 
+Key: valor 
+
+
+---
+
+
+## Json To Table
+
+ Convierte un array de JSON  a registros en una tabla dada
+
+
+Para crear de clic:  1. Tablas -->  2. Json To Table --> 3. indicar Json, table
+
+**`Función:`** `jsontotable`
+
+**`Parámetros :`** 
+
+Json: valor 
+table: valor 
+
+
+---
+
+
+## Conciliar tabla Json
+
+ Valida que no se repitan valores en un tabla por las columnas definidas
+
+
+Para crear de clic:  1. Tablas -->  2. Conciliar tabla Json --> 3. indicar JsonDataTable, Nombretabla, ColumnasConciliar, Key
+
+**`Función:`** `reconcilietable`
+
+**`Parámetros :`** 
+
+JsonDataTable: valor 
+Nombretabla: valor 
+ColumnasConciliar: valor 
+Key: valor 
+
+
+---
+
+
 ## Filtro Data table
 
  Filtra la tabla tipo JSON y retorna los registros resultantes
@@ -92,43 +151,6 @@ Filtro: valor
 ---
 
 
-## Obtener datos tabla
-
- Realiza una consulta en la tabla de datos para obtener todas sus columnas
-
-
-Para crear de clic:  1. Tablas -->  2. Obtener datos tabla --> 3. indicar Nombretabla, Columnas, Filtro
-
-**`Función:`** `getdatatable`
-
-**`Parámetros :`** 
-
-Nombretabla: valor 
-Columnas: valor 
-Filtro: valor 
-
-
----
-
-
-## Json To Table
-
- Convierte un array de JSON  a registros en una tabla dada
-
-
-Para crear de clic:  1. Tablas -->  2. Json To Table --> 3. indicar Json, table
-
-**`Función:`** `jsontotable`
-
-**`Parámetros :`** 
-
-Json: valor 
-table: valor 
-
-
----
-
-
 ## Consulta Sql Directa a Tabla
 
  Ejecuta consulta a fuente externa e inserta los datos a la tabla destino
@@ -186,26 +208,6 @@ Tabla: valor
 ---
 
 
-## Conciliar tabla
-
- Valida que no se repitan valores en un tabla por las columnas definidas
-
-
-Para crear de clic:  1. Tablas -->  2. Conciliar tabla --> 3. indicar JsonDataTable, Nombretabla, ColumnasConciliar, Key
-
-**`Función:`** `reconciletable`
-
-**`Parámetros :`** 
-
-JsonDataTable: valor 
-Nombretabla: valor 
-ColumnasConciliar: valor 
-Key: valor 
-
-
----
-
-
 ## Each Data table
 
  Itera la tabla tipo JSON y ejecuta la variable por cada registro
@@ -219,6 +221,25 @@ Para crear de clic:  1. Tablas -->  2. Each Data table --> 3. indicar JsonTable,
 
 JsonTable: valor 
 NombreVar: valor 
+
+
+---
+
+
+## Obtener datos tabla
+
+ Realiza una consulta en la tabla de datos para obtener todas sus columnas
+
+
+Para crear de clic:  1. Tablas -->  2. Obtener datos tabla --> 3. indicar Nombretabla, Columnas, Filtro
+
+**`Función:`** `getdatatable`
+
+**`Parámetros :`** 
+
+Nombretabla: valor 
+Columnas: valor 
+Filtro: valor 
 
 
 ---

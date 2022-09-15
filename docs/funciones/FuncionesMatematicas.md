@@ -1,110 +1,6 @@
 # Funciones Matematicas
 
 
-## Sign
-
- Sign
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Sign --> 3. indicar Valor
-
-**`Función:`** `sign`
-
-**`Parámetros :`** 
-
-Valor: valor 
-
-
----
-
-
-## Iff
-
- Iff
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Iff --> 3. indicar Valor1, Valor2, Valor3
-
-**`Función:`** `iff`
-
-**`Parámetros :`** 
-
-Valor1: valor 
-Valor2: valor 
-Valor3: valor 
-
-
----
-
-
-## Asinh
-
- Asinh
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Asinh --> 3. indicar Valor
-
-**`Función:`** `asinh`
-
-**`Parámetros :`** 
-
-Valor: valor 
-
-
----
-
-
-## Acosh
-
- Acosh
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Acosh --> 3. indicar Valor
-
-**`Función:`** `acosh`
-
-**`Parámetros :`** 
-
-Valor: valor 
-
-
----
-
-
-## Tanh
-
- Tanh
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Tanh --> 3. indicar Valor
-
-**`Función:`** `tanh`
-
-**`Parámetros :`** 
-
-Valor: valor 
-
-
----
-
-
-## Atan
-
- Atan
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Atan --> 3. indicar Valor
-
-**`Función:`** `atan`
-
-**`Parámetros :`** 
-
-Valor: valor 
-
-
----
-
-
 ## Sinh
 
  Sinh
@@ -139,14 +35,14 @@ Valor: valor
 ---
 
 
-## Acos
+## Acosh
 
- Acos
+ Acosh
 
 
-Para crear de clic:  1. Funciones Matematicas -->  2. Acos --> 3. indicar Valor
+Para crear de clic:  1. Funciones Matematicas -->  2. Acosh --> 3. indicar Valor
 
-**`Función:`** `acos`
+**`Función:`** `acosh`
 
 **`Parámetros :`** 
 
@@ -173,14 +69,14 @@ Valor: valor
 ---
 
 
-## Length
+## Asinh
 
- Length
+ Asinh
 
 
-Para crear de clic:  1. Funciones Matematicas -->  2. Length --> 3. indicar Valor
+Para crear de clic:  1. Funciones Matematicas -->  2. Asinh --> 3. indicar Valor
 
-**`Función:`** `length`
+**`Función:`** `asinh`
 
 **`Parámetros :`** 
 
@@ -190,14 +86,14 @@ Valor: valor
 ---
 
 
-## Chr
+## Acos
 
- Chr
+ Acos
 
 
-Para crear de clic:  1. Funciones Matematicas -->  2. Chr --> 3. indicar Valor
+Para crear de clic:  1. Funciones Matematicas -->  2. Acos --> 3. indicar Valor
 
-**`Función:`** `chr`
+**`Función:`** `acos`
 
 **`Parámetros :`** 
 
@@ -224,6 +120,23 @@ Valor: valor
 ---
 
 
+## Atan
+
+ Atan
+
+
+Para crear de clic:  1. Funciones Matematicas -->  2. Atan --> 3. indicar Valor
+
+**`Función:`** `atan`
+
+**`Parámetros :`** 
+
+Valor: valor 
+
+
+---
+
+
 ## Abs
 
  Abs
@@ -241,68 +154,14 @@ Valor: valor
 ---
 
 
-## Formatf
+## Frac
 
- Formatf
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Formatf --> 3. indicar Valor1, Valor2
-
-**`Función:`** `formatf`
-
-**`Parámetros :`** 
-
-Valor1: valor 
-Valor2: valor 
+ Frac
 
 
----
+Para crear de clic:  1. Funciones Matematicas -->  2. Frac --> 3. indicar Valor
 
-
-## Round
-
- Round
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Round --> 3. indicar Valor1, Valor2
-
-**`Función:`** `round`
-
-**`Parámetros :`** 
-
-Valor1: valor 
-Valor2: valor 
-
-
----
-
-
-## Trunc
-
- Trunc
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Trunc --> 3. indicar Valor1, Valor2
-
-**`Función:`** `trunc`
-
-**`Parámetros :`** 
-
-Valor1: valor 
-Valor2: valor 
-
-
----
-
-
-## Exists
-
- Exists
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Exists --> 3. indicar Valor
-
-**`Función:`** `exists`
+**`Función:`** `frac`
 
 **`Parámetros :`** 
 
@@ -312,70 +171,14 @@ Valor: valor
 ---
 
 
-## Msg
+## Int
 
- Msg
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Msg --> 3. indicar Valor1, Valor2, Valor3
-
-**`Función:`** `msg`
-
-**`Parámetros :`** 
-
-Valor1: valor 
-Valor2: valor 
-Valor3: valor 
+ Int
 
 
----
+Para crear de clic:  1. Funciones Matematicas -->  2. Int --> 3. indicar Valor
 
-
-## Input
-
- Input
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Input --> 3. indicar Valor1, Valor2, Valor3
-
-**`Función:`** `input`
-
-**`Parámetros :`** 
-
-Valor1: valor 
-Valor2: valor 
-Valor3: valor 
-
-
----
-
-
-## Stringofchar
-
- Stringofchar
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Stringofchar --> 3. indicar Valor1, Valor2
-
-**`Función:`** `stringofchar`
-
-**`Parámetros :`** 
-
-Valor1: valor 
-Valor2: valor 
-
-
----
-
-
-## Code
-
- Code
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Code --> 3. indicar Valor
-
-**`Función:`** `code`
+**`Función:`** `int`
 
 **`Parámetros :`** 
 
@@ -385,49 +188,14 @@ Valor: valor
 ---
 
 
-## Isnumber
+## Sqrt
 
- Isnumber
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Isnumber --> 3. indicar Valor
-
-**`Función:`** `isnumber`
-
-**`Parámetros :`** 
-
-Valor: valor 
+ Sqrt
 
 
----
+Para crear de clic:  1. Funciones Matematicas -->  2. Sqrt --> 3. indicar Valor
 
-
-## Formatdate
-
- Formatdate
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Formatdate --> 3. indicar Valor1, Valor2
-
-**`Función:`** `formatdate`
-
-**`Parámetros :`** 
-
-Valor1: valor 
-Valor2: valor 
-
-
----
-
-
-## Trim
-
- Trim
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Trim --> 3. indicar Valor
-
-**`Función:`** `trim`
+**`Función:`** `sqrt`
 
 **`Parámetros :`** 
 
@@ -437,38 +205,52 @@ Valor: valor
 ---
 
 
-## Format
+## Exp
 
- Format
+ Exp
 
 
-Para crear de clic:  1. Funciones Matematicas -->  2. Format --> 3. indicar Valor1, Valor2
+Para crear de clic:  1. Funciones Matematicas -->  2. Exp --> 3. indicar Valor
 
-**`Función:`** `format`
+**`Función:`** `exp`
 
 **`Parámetros :`** 
 
-Valor1: valor 
-Valor2: valor 
+Valor: valor 
 
 
 ---
 
 
-## Encodedate
+## Lg
 
- Encodedate
+ Lg
 
 
-Para crear de clic:  1. Funciones Matematicas -->  2. Encodedate --> 3. indicar Valor1, Valor2, Valor3
+Para crear de clic:  1. Funciones Matematicas -->  2. Lg --> 3. indicar Valor
 
-**`Función:`** `encodedate`
+**`Función:`** `lg`
 
 **`Parámetros :`** 
 
-Valor1: valor 
-Valor2: valor 
-Valor3: valor 
+Valor: valor 
+
+
+---
+
+
+## Trimright
+
+ Trimright
+
+
+Para crear de clic:  1. Funciones Matematicas -->  2. Trimright --> 3. indicar Valor
+
+**`Función:`** `trimright`
+
+**`Parámetros :`** 
+
+Valor: valor 
 
 
 ---
@@ -581,14 +363,14 @@ Valor: valor
 ---
 
 
-## Trimright
+## Tanh
 
- Trimright
+ Tanh
 
 
-Para crear de clic:  1. Funciones Matematicas -->  2. Trimright --> 3. indicar Valor
+Para crear de clic:  1. Funciones Matematicas -->  2. Tanh --> 3. indicar Valor
 
-**`Función:`** `trimright`
+**`Función:`** `tanh`
 
 **`Parámetros :`** 
 
@@ -615,19 +397,403 @@ Valor: valor
 ---
 
 
-## Set
+## Trim
 
- Set
+ Trim
 
 
-Para crear de clic:  1. Funciones Matematicas -->  2. Set --> 3. indicar Valor1, Valor2
+Para crear de clic:  1. Funciones Matematicas -->  2. Trim --> 3. indicar Valor
 
-**`Función:`** `set`
+**`Función:`** `trim`
+
+**`Parámetros :`** 
+
+Valor: valor 
+
+
+---
+
+
+## Length
+
+ Length
+
+
+Para crear de clic:  1. Funciones Matematicas -->  2. Length --> 3. indicar Valor
+
+**`Función:`** `length`
+
+**`Parámetros :`** 
+
+Valor: valor 
+
+
+---
+
+
+## Chr
+
+ Chr
+
+
+Para crear de clic:  1. Funciones Matematicas -->  2. Chr --> 3. indicar Valor
+
+**`Función:`** `chr`
+
+**`Parámetros :`** 
+
+Valor: valor 
+
+
+---
+
+
+## Iff
+
+ Iff
+
+
+Para crear de clic:  1. Funciones Matematicas -->  2. Iff --> 3. indicar Valor1, Valor2, Valor3
+
+**`Función:`** `iff`
 
 **`Parámetros :`** 
 
 Valor1: valor 
 Valor2: valor 
+Valor3: valor 
+
+
+---
+
+
+## Sign
+
+ Sign
+
+
+Para crear de clic:  1. Funciones Matematicas -->  2. Sign --> 3. indicar Valor
+
+**`Función:`** `sign`
+
+**`Parámetros :`** 
+
+Valor: valor 
+
+
+---
+
+
+## Input
+
+ Input
+
+
+Para crear de clic:  1. Funciones Matematicas -->  2. Input --> 3. indicar Valor1, Valor2, Valor3
+
+**`Función:`** `input`
+
+**`Parámetros :`** 
+
+Valor1: valor 
+Valor2: valor 
+Valor3: valor 
+
+
+---
+
+
+## Encodedate
+
+ Encodedate
+
+
+Para crear de clic:  1. Funciones Matematicas -->  2. Encodedate --> 3. indicar Valor1, Valor2, Valor3
+
+**`Función:`** `encodedate`
+
+**`Parámetros :`** 
+
+Valor1: valor 
+Valor2: valor 
+Valor3: valor 
+
+
+---
+
+
+## Log
+
+ Log
+
+
+Para crear de clic:  1. Funciones Matematicas -->  2. Log --> 3. indicar Valor
+
+**`Función:`** `log`
+
+**`Parámetros :`** 
+
+Valor: valor 
+
+
+---
+
+
+## Stringofchar
+
+ Stringofchar
+
+
+Para crear de clic:  1. Funciones Matematicas -->  2. Stringofchar --> 3. indicar Valor1, Valor2
+
+**`Función:`** `stringofchar`
+
+**`Parámetros :`** 
+
+Valor1: valor 
+Valor2: valor 
+
+
+---
+
+
+## Round
+
+ Round
+
+
+Para crear de clic:  1. Funciones Matematicas -->  2. Round --> 3. indicar Valor1, Valor2
+
+**`Función:`** `round`
+
+**`Parámetros :`** 
+
+Valor1: valor 
+Valor2: valor 
+
+
+---
+
+
+## Trunc
+
+ Trunc
+
+
+Para crear de clic:  1. Funciones Matematicas -->  2. Trunc --> 3. indicar Valor1, Valor2
+
+**`Función:`** `trunc`
+
+**`Parámetros :`** 
+
+Valor1: valor 
+Valor2: valor 
+
+
+---
+
+
+## Exists
+
+ Exists
+
+
+Para crear de clic:  1. Funciones Matematicas -->  2. Exists --> 3. indicar Valor
+
+**`Función:`** `exists`
+
+**`Parámetros :`** 
+
+Valor: valor 
+
+
+---
+
+
+## Coseno
+
+
+
+
+Para crear de clic:  1. Funciones Matematicas -->  2. Coseno
+
+**`Función:`** `cos`
+
+
+---
+
+
+## Msg
+
+ Msg
+
+
+Para crear de clic:  1. Funciones Matematicas -->  2. Msg --> 3. indicar Valor1, Valor2, Valor3
+
+**`Función:`** `msg`
+
+**`Parámetros :`** 
+
+Valor1: valor 
+Valor2: valor 
+Valor3: valor 
+
+
+---
+
+
+## Format
+
+ Format
+
+
+Para crear de clic:  1. Funciones Matematicas -->  2. Format --> 3. indicar Valor1, Valor2
+
+**`Función:`** `format`
+
+**`Parámetros :`** 
+
+Valor1: valor 
+Valor2: valor 
+
+
+---
+
+
+## Formatf
+
+ Formatf
+
+
+Para crear de clic:  1. Funciones Matematicas -->  2. Formatf --> 3. indicar Valor1, Valor2
+
+**`Función:`** `formatf`
+
+**`Parámetros :`** 
+
+Valor1: valor 
+Valor2: valor 
+
+
+---
+
+
+## Formatdate
+
+ Formatdate
+
+
+Para crear de clic:  1. Funciones Matematicas -->  2. Formatdate --> 3. indicar Valor1, Valor2
+
+**`Función:`** `formatdate`
+
+**`Parámetros :`** 
+
+Valor1: valor 
+Valor2: valor 
+
+
+---
+
+
+## Isnumber
+
+ Isnumber
+
+
+Para crear de clic:  1. Funciones Matematicas -->  2. Isnumber --> 3. indicar Valor
+
+**`Función:`** `isnumber`
+
+**`Parámetros :`** 
+
+Valor: valor 
+
+
+---
+
+
+## Code
+
+ Code
+
+
+Para crear de clic:  1. Funciones Matematicas -->  2. Code --> 3. indicar Valor
+
+**`Función:`** `code`
+
+**`Parámetros :`** 
+
+Valor: valor 
+
+
+---
+
+
+## Define
+
+ Define
+
+
+Para crear de clic:  1. Funciones Matematicas -->  2. Define --> 3. indicar Valor1, Valor2
+
+**`Función:`** `define`
+
+**`Parámetros :`** 
+
+Valor1: valor 
+Valor2: valor 
+
+
+---
+
+
+## Tan
+
+ Tan
+
+
+Para crear de clic:  1. Funciones Matematicas -->  2. Tan --> 3. indicar Valor
+
+**`Función:`** `tan`
+
+**`Parámetros :`** 
+
+Valor: valor 
+
+
+---
+
+
+## Cos
+
+ Cos
+
+
+Para crear de clic:  1. Funciones Matematicas -->  2. Cos --> 3. indicar Valor
+
+**`Función:`** `cos`
+
+**`Parámetros :`** 
+
+Valor: valor 
+
+
+---
+
+
+## Sin
+
+ Sin
+
+
+Para crear de clic:  1. Funciones Matematicas -->  2. Sin --> 3. indicar Valor
+
+**`Función:`** `sin`
+
+**`Parámetros :`** 
+
+Valor: valor 
 
 
 ---
@@ -645,6 +811,71 @@ Para crear de clic:  1. Funciones Matematicas -->  2. Dec --> 3. indicar Valor
 **`Parámetros :`** 
 
 Valor: valor 
+
+
+---
+
+
+## Inc
+
+ Inc
+
+
+Para crear de clic:  1. Funciones Matematicas -->  2. Inc --> 3. indicar Valor
+
+**`Función:`** `inc`
+
+**`Parámetros :`** 
+
+Valor: valor 
+
+
+---
+
+
+## Max
+
+
+
+
+Para crear de clic:  1. Funciones Matematicas -->  2. Max
+
+**`Función:`** `max`
+
+
+---
+
+
+## Val
+
+ Val
+
+
+Para crear de clic:  1. Funciones Matematicas -->  2. Val --> 3. indicar Valor
+
+**`Función:`** `val`
+
+**`Parámetros :`** 
+
+Valor: valor 
+
+
+---
+
+
+## Set
+
+ Set
+
+
+Para crear de clic:  1. Funciones Matematicas -->  2. Set --> 3. indicar Valor1, Valor2
+
+**`Función:`** `set`
+
+**`Parámetros :`** 
+
+Valor1: valor 
+Valor2: valor 
 
 
 ---
@@ -684,237 +915,6 @@ Para crear de clic:  1. Funciones Matematicas -->  2. Seno
 Para crear de clic:  1. Funciones Matematicas -->  2. Min
 
 **`Función:`** `min`
-
-
----
-
-
-## Max
-
-
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Max
-
-**`Función:`** `max`
-
-
----
-
-
-## Coseno
-
-
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Coseno
-
-**`Función:`** `cos`
-
-
----
-
-
-## Val
-
- Val
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Val --> 3. indicar Valor
-
-**`Función:`** `val`
-
-**`Parámetros :`** 
-
-Valor: valor 
-
-
----
-
-
-## Define
-
- Define
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Define --> 3. indicar Valor1, Valor2
-
-**`Función:`** `define`
-
-**`Parámetros :`** 
-
-Valor1: valor 
-Valor2: valor 
-
-
----
-
-
-## Inc
-
- Inc
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Inc --> 3. indicar Valor
-
-**`Función:`** `inc`
-
-**`Parámetros :`** 
-
-Valor: valor 
-
-
----
-
-
-## Frac
-
- Frac
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Frac --> 3. indicar Valor
-
-**`Función:`** `frac`
-
-**`Parámetros :`** 
-
-Valor: valor 
-
-
----
-
-
-## Lg
-
- Lg
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Lg --> 3. indicar Valor
-
-**`Función:`** `lg`
-
-**`Parámetros :`** 
-
-Valor: valor 
-
-
----
-
-
-## Int
-
- Int
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Int --> 3. indicar Valor
-
-**`Función:`** `int`
-
-**`Parámetros :`** 
-
-Valor: valor 
-
-
----
-
-
-## Sqrt
-
- Sqrt
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Sqrt --> 3. indicar Valor
-
-**`Función:`** `sqrt`
-
-**`Parámetros :`** 
-
-Valor: valor 
-
-
----
-
-
-## Exp
-
- Exp
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Exp --> 3. indicar Valor
-
-**`Función:`** `exp`
-
-**`Parámetros :`** 
-
-Valor: valor 
-
-
----
-
-
-## Sin
-
- Sin
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Sin --> 3. indicar Valor
-
-**`Función:`** `sin`
-
-**`Parámetros :`** 
-
-Valor: valor 
-
-
----
-
-
-## Log
-
- Log
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Log --> 3. indicar Valor
-
-**`Función:`** `log`
-
-**`Parámetros :`** 
-
-Valor: valor 
-
-
----
-
-
-## Tan
-
- Tan
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Tan --> 3. indicar Valor
-
-**`Función:`** `tan`
-
-**`Parámetros :`** 
-
-Valor: valor 
-
-
----
-
-
-## Cos
-
- Cos
-
-
-Para crear de clic:  1. Funciones Matematicas -->  2. Cos --> 3. indicar Valor
-
-**`Función:`** `cos`
-
-**`Parámetros :`** 
-
-Valor: valor 
 
 
 ---

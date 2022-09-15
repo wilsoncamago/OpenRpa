@@ -1,41 +1,36 @@
 # Loop
 
 
-## Each json Array
+## Mientras condicion
 
- Itera los subobjetos JSON por el key y ejecuta la variable por iteración
+ mientras la condición sea verdadera se ejecuta la variable
 
 
-Para crear de clic:  1. Loop -->  2. Each json Array --> 3. indicar Json, key, NombreVar
+Para crear de clic:  1. Loop -->  2. Mientras condicion --> 3. indicar Condicion, NombreVar
 
-**`Función:`** `eachjson`
+**`Función:`** `waitconditionvar`
 
 **`Parámetros :`** 
 
-Json: valor 
-key: valor 
+Condicion: valor 
 NombreVar: valor 
 
 
 ---
 
 
-## Buscar Valor Grid
+## Romper Ciclo
 
- Se busca un valor en tabla a partir de cada registro tomado del portapapeles y ejecuta la variable indicada
+ Rompe el cliclo del robot con el motivo indicado
 
 
-Para crear de clic:  1. Loop -->  2. Buscar Valor Grid --> 3. indicar ValorBuscado, Delimitador, Columna, MaximoIteraciones, Variable
+Para crear de clic:  1. Loop -->  2. Romper Ciclo --> 3. indicar Log
 
-**`Función:`** `findvalueongrid`
+**`Función:`** `break`
 
 **`Parámetros :`** 
 
-ValorBuscado: valor 
-Delimitador: valor 
-Columna: valor 
-MaximoIteraciones: valor 
-Variable: valor 
+Log: valor 
 
 
 ---
@@ -58,37 +53,33 @@ Log: valor
 ---
 
 
-## Repetir variable
+## Buscar Valores Grid
 
- Se ejecuta la variable la cantidad de iteraciones indicada
+ Se buscan los valores en tabla por cada registro tomado del portapapeles y ejecuta la variable indicada con los ValoresBuscados y columnas separados por |
 
 
-Para crear de clic:  1. Loop -->  2. Repetir variable --> 3. indicar NombreVar, Iteraciones
+Para crear de clic:  1. Loop -->  2. Buscar Valores Grid --> 3. indicar ValoresBuscados, Delimitador, Columnas, MaximoIteraciones, Variable
 
-**`Función:`** `repeatvar`
+**`Función:`** `findvaluesongrid`
 
 **`Parámetros :`** 
 
-NombreVar: valor 
-Iteraciones: valor 
+ValoresBuscados: valor 
+Delimitador: valor 
+Columnas: valor 
+MaximoIteraciones: valor 
+Variable: valor 
 
 
 ---
 
 
-## Mientras condicion
-
- mientras la condición sea verdadera se ejecuta la variable
+## For Each
 
 
-Para crear de clic:  1. Loop -->  2. Mientras condicion --> 3. indicar Condicion, NombreVar
 
-**`Función:`** `waitconditionvar`
 
-**`Parámetros :`** 
-
-Condicion: valor 
-NombreVar: valor 
+Para crear de clic:  1. Loop -->  2. For Each
 
 
 ---
@@ -129,29 +120,80 @@ Indice: valor
 ---
 
 
-## Romper Ciclo
+## Each json Array
 
- Rompe el cliclo del robot con el motivo indicado
+ Itera los subobjetos JSON por el key y ejecuta la variable por iteración
 
 
-Para crear de clic:  1. Loop -->  2. Romper Ciclo --> 3. indicar Log
+Para crear de clic:  1. Loop -->  2. Each json Array --> 3. indicar Json, key, NombreVar
 
-**`Función:`** `break`
+**`Función:`** `eachjson`
 
 **`Parámetros :`** 
 
-Log: valor 
+Json: valor 
+key: valor 
+NombreVar: valor 
 
 
 ---
 
 
-## For Each
+## Buscar Valor Grid
+
+ Se busca un valor en tabla a partir de cada registro tomado del portapapeles y ejecuta la variable indicada
 
 
+Para crear de clic:  1. Loop -->  2. Buscar Valor Grid --> 3. indicar ValorBuscado, Delimitador, Columna, MaximoIteraciones, Variable
+
+**`Función:`** `findvalueongrid`
+
+**`Parámetros :`** 
+
+ValorBuscado: valor 
+Delimitador: valor 
+Columna: valor 
+MaximoIteraciones: valor 
+Variable: valor 
 
 
-Para crear de clic:  1. Loop -->  2. For Each
+---
+
+
+## Buscar filtro en Grid
+
+ Aplica Filtro en tabla a partir de cada registro tomado del portapapeles y ejecuta la variable indicada
+
+
+Para crear de clic:  1. Loop -->  2. Buscar filtro en Grid --> 3. indicar Tabla, Delimitador, Filtro, MaximoIteraciones, Variable
+
+**`Función:`** `findfilterongrid`
+
+**`Parámetros :`** 
+
+Tabla: valor 
+Delimitador: valor 
+Filtro: valor 
+MaximoIteraciones: valor 
+Variable: valor 
+
+
+---
+
+
+## Repetir variable
+
+ Se ejecuta la variable la cantidad de iteraciones indicada
+
+
+Para crear de clic:  1. Loop -->  2. Repetir variable --> 3. indicar NombreVar, Iteraciones
+
+**`Función:`** `repeatvar`
+
+**`Parámetros :`** 
+
+NombreVar: valor 
+Iteraciones: valor 
 
 
 ---

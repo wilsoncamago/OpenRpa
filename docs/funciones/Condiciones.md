@@ -1,66 +1,14 @@
 # Condiciones
 
 
-## Diferente
+## Mayor o igual
 
 
 
 
-Para crear de clic:  1. Condiciones -->  2. Diferente
+Para crear de clic:  1. Condiciones -->  2. Mayor o igual
 
-**`Función:`** `<>`
-
-
----
-
-
-## Igual
-
-
-
-
-Para crear de clic:  1. Condiciones -->  2. Igual
-
-**`Función:`** `=`
-
-
----
-
-
-## OR
-
-
-
-
-Para crear de clic:  1. Condiciones -->  2. OR
-
-**`Función:`** `|`
-
-
----
-
-
-## Menor que
-
-
-
-
-Para crear de clic:  1. Condiciones -->  2. Menor que
-
-**`Función:`** `<`
-
-
----
-
-
-## Menor o igual
-
-
-
-
-Para crear de clic:  1. Condiciones -->  2. Menor o igual
-
-**`Función:`** `<=`
+**`Función:`** `>=`
 
 
 ---
@@ -79,14 +27,77 @@ Para crear de clic:  1. Condiciones -->  2. Mayor que
 ---
 
 
-## Mayor o igual
+## OR
 
 
 
 
-Para crear de clic:  1. Condiciones -->  2. Mayor o igual
+Para crear de clic:  1. Condiciones -->  2. OR
 
-**`Función:`** `>=`
+**`Función:`** `|`
+
+
+---
+
+
+## Menor o igual
+
+
+
+
+Para crear de clic:  1. Condiciones -->  2. Menor o igual
+
+**`Función:`** `<=`
+
+
+---
+
+
+## Diferente
+
+
+
+
+Para crear de clic:  1. Condiciones -->  2. Diferente
+
+**`Función:`** `<>`
+
+
+---
+
+
+## Menor que
+
+
+
+
+Para crear de clic:  1. Condiciones -->  2. Menor que
+
+**`Función:`** `<`
+
+
+---
+
+
+## Igual
+
+
+
+
+Para crear de clic:  1. Condiciones -->  2. Igual
+
+**`Función:`** `=`
+
+
+---
+
+
+## Si
+
+
+
+
+Para crear de clic:  1. Condiciones -->  2. Si
 
 
 ---
@@ -100,17 +111,6 @@ Para crear de clic:  1. Condiciones -->  2. Mayor o igual
 Para crear de clic:  1. Condiciones -->  2. AND
 
 **`Función:`** `&`
-
-
----
-
-
-## Si
-
-
-
-
-Para crear de clic:  1. Condiciones -->  2. Si
 
 
 ---

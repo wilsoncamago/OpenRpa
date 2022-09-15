@@ -1,18 +1,18 @@
 # Mail
 
 
-## Descargar Adjuntos Correo
+## Correo Eliminado Id
 
 
 
 
-Para crear de clic:  1. Mail -->  2. Descargar Adjuntos Correo --> 3. indicar server:valor, username:valor, password:valor, port:0, secure:2,  id:0
+Para crear de clic:  1. Mail -->  2. Correo Eliminado Id --> 3. indicar server:valor, username:valor, password:valor, port:0, secure:2,  id:0
 
-**`classname:`** `ApiMail.DownloadAttbyId`
+**`classname:`** `ApiMail.SetDeletebyId`
 
 ```csharp
 call('{
-    "classname":"ApiMail.DownloadAttbyId",
+    "classname":"ApiMail.SetDeletebyId",
     value:
     {
         "server":"",
@@ -40,33 +40,6 @@ Para crear de clic:  1. Mail -->  2. Correo Leido Id --> 3. indicar server:valor
 ```csharp
 call('{
     "classname":"ApiMail.SetReadbyId",
-    value:
-    {
-        "server":"",
-        "username":"",
-        "password":"",
-        "port":0,
-        "secure":2,
-        "id":0
-    }
-}')
-```
-
----
-
-
-## Obtener Correo Id
-
-
-
-
-Para crear de clic:  1. Mail -->  2. Obtener Correo Id --> 3. indicar server:valor, username:valor, password:valor, port:0, secure:2,  id:0
-
-**`classname:`** `ApiMail.GetEmailById`
-
-```csharp
-call('{
-    "classname":"ApiMail.GetEmailById",
     value:
     {
         "server":"",
@@ -113,18 +86,18 @@ call('{
 ---
 
 
-## Correo Eliminado Id
+## Obtener Correo Id
 
 
 
 
-Para crear de clic:  1. Mail -->  2. Correo Eliminado Id --> 3. indicar server:valor, username:valor, password:valor, port:0, secure:2,  id:0
+Para crear de clic:  1. Mail -->  2. Obtener Correo Id --> 3. indicar server:valor, username:valor, password:valor, port:0, secure:2,  id:0
 
-**`classname:`** `ApiMail.SetDeletebyId`
+**`classname:`** `ApiMail.GetEmailById`
 
 ```csharp
 call('{
-    "classname":"ApiMail.SetDeletebyId",
+    "classname":"ApiMail.GetEmailById",
     value:
     {
         "server":"",
@@ -140,13 +113,61 @@ call('{
 ---
 
 
-## Configuración Correo
+## Descargar Adjuntos Correo
 
 
 
 
-Para crear de clic:  1. Mail -->  2. Configuración Correo
+Para crear de clic:  1. Mail -->  2. Descargar Adjuntos Correo --> 3. indicar server:valor, username:valor, password:valor, port:0, secure:2,  id:0
 
+**`classname:`** `ApiMail.DownloadAttbyId`
+
+```csharp
+call('{
+    "classname":"ApiMail.DownloadAttbyId",
+    value:
+    {
+        "server":"",
+        "username":"",
+        "password":"",
+        "port":0,
+        "secure":2,
+        "id":0
+    }
+}')
+```
+
+---
+
+
+## Enviar Correo Smtp
+
+Envia correos por protocolo SMTP usar SSL secure 0 para no o secure 1 para si
+
+
+Para crear de clic:  1. Mail -->  2. Enviar Correo Smtp --> 3. indicar server:$smtphost, username:$smtpemail, password:$smtpclave, port:$smtppuerto, secure:1,  subject:$smtpasunto, body:$smtpbody, from:$smtpemail, to:valor, attached:$smtpadjunto, ishtml:1
+
+**`classname:`** `ApiMail.SendEmail`
+
+```csharp
+call('{
+    "classname":"ApiMail.SendEmail",
+    value:
+    {
+        "server":"$smtphost",
+        "username":"$smtpemail",
+        "password":"$smtpclave",
+        "port":"$smtppuerto",
+        "secure":1,
+        "subject":"$smtpasunto",
+        "body":"$smtpbody",
+        "from":"$smtpemail",
+        "to":"",
+        "attached":"$smtpadjunto",
+        "ishtml":1
+    }
+}')
+```
 
 ---
 
@@ -157,6 +178,17 @@ Para crear de clic:  1. Mail -->  2. Configuración Correo
 
 
 Para crear de clic:  1. Mail -->  2. Enviar Correo
+
+
+---
+
+
+## Configuración Correo
+
+
+
+
+Para crear de clic:  1. Mail -->  2. Configuración Correo
 
 
 ---

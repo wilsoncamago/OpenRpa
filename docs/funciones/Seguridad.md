@@ -1,49 +1,6 @@
 # Seguridad
 
 
-## Cifrar RSA
-
-Cifrar Cadena usando RSA
-
-
-Para crear de clic:  1. Seguridad -->  2. Cifrar RSA --> 3. indicar text:valor, public:
-
-**`classname:`** `ApiSecurity.EncryptorRSa`
-
-```csharp
-call('{
-    "classname":"ApiSecurity.EncryptorRSa",
-    value:
-    {
-        "text":"",
-        "public":""
-    }')
-```
-
----
-
-
-## Generar Key Guid
-
-Generar Clave usando  Guid
-
-
-Para crear de clic:  1. Seguridad -->  2. Generar Key Guid
-
-**`classname:`** `ApiSecurity.GeneratorKeyGui`
-
-```csharp
-call('{
-    "classname":"ApiSecurity.GeneratorKeyGui",
-    value:
-    {
-    }
-}')
-```
-
----
-
-
 ## Decifrar Aes
 
 Decifrar Cadena usando AES
@@ -65,6 +22,50 @@ call('{
         "keysize":256
     }
 }')
+```
+
+---
+
+
+## Decifrar RSA
+
+Decifrar Cadena usando RSA
+
+
+Para crear de clic:  1. Seguridad -->  2. Decifrar RSA --> 3. indicar text:valor, private:
+
+**`classname:`** `ApiSecurity.DecryptorRSa`
+
+```csharp
+call('{
+    "classname":"ApiSecurity.DecryptorRSa",
+    value:
+    {
+        "text":"",
+        "private":""
+    }')
+```
+
+---
+
+
+## Cifrar RSA
+
+Cifrar Cadena usando RSA
+
+
+Para crear de clic:  1. Seguridad -->  2. Cifrar RSA --> 3. indicar text:valor, public:
+
+**`classname:`** `ApiSecurity.EncryptorRSa`
+
+```csharp
+call('{
+    "classname":"ApiSecurity.EncryptorRSa",
+    value:
+    {
+        "text":"",
+        "public":""
+    }')
 ```
 
 ---
@@ -148,28 +149,6 @@ Para crear de clic:  1. Seguridad -->  2. Generar Key Base64Encode --> 3. indica
 ```csharp
 call('{
     "classname":"ApiSecurity.GeneratorKeyBase64Encode",
-    value:
-    {
-        "text":""
-    }
-}')
-```
-
----
-
-
-## Generar Key Base64Decode
-
-Generar Clave usando  Base64Decode
-
-
-Para crear de clic:  1. Seguridad -->  2. Generar Key Base64Decode --> 3. indicar text:
-
-**`classname:`** `ApiSecurity.GeneratorKeyBase64Decode`
-
-```csharp
-call('{
-    "classname":"ApiSecurity.GeneratorKeyBase64Decode",
     value:
     {
         "text":""
@@ -343,43 +322,20 @@ call('{
 ---
 
 
-## Decifrar RSA
+## Generar Key Guid
 
-Decifrar Cadena usando RSA
-
-
-Para crear de clic:  1. Seguridad -->  2. Decifrar RSA --> 3. indicar text:valor, private:
-
-**`classname:`** `ApiSecurity.DecryptorRSa`
-
-```csharp
-call('{
-    "classname":"ApiSecurity.DecryptorRSa",
-    value:
-    {
-        "text":"",
-        "private":""
-    }')
-```
-
----
+Generar Clave usando  Guid
 
 
-## Generar Key SHA512
+Para crear de clic:  1. Seguridad -->  2. Generar Key Guid
 
-Generar Clave usando  SHA512
-
-
-Para crear de clic:  1. Seguridad -->  2. Generar Key SHA512 --> 3. indicar text:
-
-**`classname:`** `ApiSecurity.GeneratorKeySHA512`
+**`classname:`** `ApiSecurity.GeneratorKeyGui`
 
 ```csharp
 call('{
-    "classname":"ApiSecurity.GeneratorKeySHA512",
+    "classname":"ApiSecurity.GeneratorKeyGui",
     value:
     {
-        "text":""
     }
 }')
 ```
@@ -409,18 +365,40 @@ call('{
 ---
 
 
-## Generar Key SHA256
+## Generar Key Base64Decode
 
-Generar Clave usando  SHA256
+Generar Clave usando  Base64Decode
 
 
-Para crear de clic:  1. Seguridad -->  2. Generar Key SHA256 --> 3. indicar text:
+Para crear de clic:  1. Seguridad -->  2. Generar Key Base64Decode --> 3. indicar text:
 
-**`classname:`** `ApiSecurity.GeneratorKeySHA256`
+**`classname:`** `ApiSecurity.GeneratorKeyBase64Decode`
 
 ```csharp
 call('{
-    "classname":"ApiSecurity.GeneratorKeySHA256",
+    "classname":"ApiSecurity.GeneratorKeyBase64Decode",
+    value:
+    {
+        "text":""
+    }
+}')
+```
+
+---
+
+
+## Generar Key SHA512
+
+Generar Clave usando  SHA512
+
+
+Para crear de clic:  1. Seguridad -->  2. Generar Key SHA512 --> 3. indicar text:
+
+**`classname:`** `ApiSecurity.GeneratorKeySHA512`
+
+```csharp
+call('{
+    "classname":"ApiSecurity.GeneratorKeySHA512",
     value:
     {
         "text":""
@@ -443,6 +421,28 @@ Para crear de clic:  1. Seguridad -->  2. Generar Key SHA384 --> 3. indicar text
 ```csharp
 call('{
     "classname":"ApiSecurity.GeneratorKeySHA384",
+    value:
+    {
+        "text":""
+    }
+}')
+```
+
+---
+
+
+## Generar Key SHA256
+
+Generar Clave usando  SHA256
+
+
+Para crear de clic:  1. Seguridad -->  2. Generar Key SHA256 --> 3. indicar text:
+
+**`classname:`** `ApiSecurity.GeneratorKeySHA256`
+
+```csharp
+call('{
+    "classname":"ApiSecurity.GeneratorKeySHA256",
     value:
     {
         "text":""

@@ -1,82 +1,6 @@
 # Eventos Robot
 
 
-## Exportar Informe
-
- Exporta informe a formatos  xlsx  xls  docx  doc  tiff  tif  png  jpg  bmp  gif  pdf  html  xml  dbf  ods  odt  ppt  csv  txt  svg  pptx
-
-
-Para crear de clic:  1. Eventos Robot -->  2. Exportar Informe --> 3. indicar Reporte,  JSON,  ConTitulos1=si 0=no,  ArchivoSalida
-
-**`Función:`** `exportreportrpa`
-
-**`Parámetros :`** 
-
-Reporte: valor 
-JSON: valor 
-ConTitulos"1=si 0=no": valor 
-ArchivoSalida: valor 
-
-
----
-
-
-## QueueServer
-
- Adiciona en el servidor objeto JSON a queue
-
-
-Para crear de clic:  1. Eventos Robot -->  2. QueueServer --> 3. indicar JSON, NomQueue
-
-**`Función:`** `queueserver`
-
-**`Parámetros :`** 
-
-JSON: valor 
-NomQueue: valor 
-
-
----
-
-
-## QueueCustom
-
- Adiciona en el Custom Server objeto JSON a queue
-
-
-Para crear de clic:  1. Eventos Robot -->  2. QueueCustom --> 3. indicar JSON, NomQueue
-
-**`Función:`** `queuecustom`
-
-**`Parámetros :`** 
-
-JSON: valor 
-NomQueue: valor 
-
-
----
-
-
-## Exportar Informe Sql
-
- Exporta informe desde SQL a formatos  xlsx  xls  docx  doc  tiff  tif  png  jpg  bmp  gif  pdf  html  xml  dbf  ods  odt  ppt  csv  txt  svg  pptx
-
-
-Para crear de clic:  1. Eventos Robot -->  2. Exportar Informe Sql --> 3. indicar Reporte,  sql,  ConTitulos1=si 0=no,  ArchivoSalida
-
-**`Función:`** `exportsqlreportrpa`
-
-**`Parámetros :`** 
-
-Reporte: valor 
-sql: valor 
-ConTitulos"1=si 0=no": valor 
-ArchivoSalida: valor 
-
-
----
-
-
 ## Cerrar Conexion
 
 Forza el cierre de conexion de BD actual
@@ -89,17 +13,6 @@ Para crear de clic:  1. Eventos Robot -->  2. Cerrar Conexion --> 3. indicar Val
 **`Parámetros :`** 
 
 Value: valor 
-
-
----
-
-
-## Retroceder Pasos
-
-
-
-
-Para crear de clic:  1. Eventos Robot -->  2. Retroceder Pasos
 
 
 ---
@@ -140,6 +53,133 @@ Comando: valor
 ---
 
 
+## QueueServer
+
+ Adiciona en el servidor objeto JSON a queue
+
+
+Para crear de clic:  1. Eventos Robot -->  2. QueueServer --> 3. indicar JSON, NomQueue
+
+**`Función:`** `queueserver`
+
+**`Parámetros :`** 
+
+JSON: valor 
+NomQueue: valor 
+
+
+---
+
+
+## Retroceder Pasos
+
+
+
+
+Para crear de clic:  1. Eventos Robot -->  2. Retroceder Pasos
+
+
+---
+
+
+## Exportar Informe
+
+ Exporta informe a formatos  xlsx  xls  docx  doc  tiff  tif  png  jpg  bmp  gif  pdf  html  xml  dbf  ods  odt  ppt  csv  txt  svg  pptx
+
+
+Para crear de clic:  1. Eventos Robot -->  2. Exportar Informe --> 3. indicar Reporte,  JSON,  ConTitulos1=si 0=no,  ArchivoSalida
+
+**`Función:`** `exportreportrpa`
+
+**`Parámetros :`** 
+
+Reporte: valor 
+JSON: valor 
+ConTitulos"1=si 0=no": valor 
+ArchivoSalida: valor 
+
+
+---
+
+
+## QueueCustom
+
+ Adiciona en el Custom Server objeto JSON a queue
+
+
+Para crear de clic:  1. Eventos Robot -->  2. QueueCustom --> 3. indicar JSON, NomQueue
+
+**`Función:`** `queuecustom`
+
+**`Parámetros :`** 
+
+JSON: valor 
+NomQueue: valor 
+
+
+---
+
+
+## Imprimir Informe Sql
+
+ Exporta informe desde SQL a formatos  xlsx  xls  docx  doc  tiff  tif  png  jpg  bmp  gif  pdf  html  xml  dbf  ods  odt  ppt  csv  txt  svg  pptx
+
+
+Para crear de clic:  1. Eventos Robot -->  2. Imprimir Informe Sql --> 3. indicar Reporte,  sql,  ConTitulos1=si 0=no,  ArchivoSalida
+
+**`Función:`** `printsqlreportrpa`
+
+**`Parámetros :`** 
+
+Reporte: valor 
+sql: valor 
+ConTitulos"1=si 0=no": valor 
+ArchivoSalida: valor 
+
+
+---
+
+
+## Imprimir Informe
+
+ Exporta informe a formatos  xlsx  xls  docx  doc  tiff  tif  png  jpg  bmp  gif  pdf  html  xml  dbf  ods  odt  ppt  csv  txt  svg  pptx
+
+
+Para crear de clic:  1. Eventos Robot -->  2. Imprimir Informe --> 3. indicar Reporte,  JSON,  ConTitulos1=si 0=no,  ArchivoSalida
+
+**`Función:`** `printreportrpa`
+
+**`Parámetros :`** 
+
+Reporte: valor 
+JSON: valor 
+ConTitulos"1=si 0=no": valor 
+ArchivoSalida: valor 
+
+
+---
+
+
+## Exportar Informe Sql
+
+ Exporta informe desde SQL a formatos  xlsx  xls  docx  doc  tiff  tif  png  jpg  bmp  gif  pdf  html  xml  dbf  ods  odt  ppt  csv  txt  svg  pptx
+
+
+Para crear de clic:  1. Eventos Robot -->  2. Exportar Informe Sql --> 3. indicar Reporte,  sql,  ConTitulos1=si 0=no,  ArchivoSalida
+
+**`Función:`** `exportsqlreportrpa`
+
+**`Parámetros :`** 
+
+Reporte: valor 
+sql: valor 
+ConTitulos"1=si 0=no": valor 
+ArchivoSalida: valor 
+
+
+---
+
+
 ## Logger
 
  Escribe en current LOG el texto indicado
@@ -157,53 +197,14 @@ Value: valor
 ---
 
 
-## Cargar Plantilla
+## Detener Ejecución
+
+ Detiene la ejecución del robot con el motivo indicado
 
 
+Para crear de clic:  1. Eventos Robot -->  2. Detener Ejecución --> 3. indicar Log
 
-
-Para crear de clic:  1. Eventos Robot -->  2. Cargar Plantilla
-
-
----
-
-
-## Avanzar Pasos
-
-
-
-
-Para crear de clic:  1. Eventos Robot -->  2. Avanzar Pasos
-
-
----
-
-
-## Obtener valor de variable
-
- Obtiene el valor actual de la variable
-
-
-Para crear de clic:  1. Eventos Robot -->  2. Obtener valor de variable --> 3. indicar NombreVar
-
-**`Función:`** `getvalvar`
-
-**`Parámetros :`** 
-
-NombreVar: valor 
-
-
----
-
-
-## Cerrar Simulador
-
- Cierra la ejecución del robot con el motivo indicado
-
-
-Para crear de clic:  1. Eventos Robot -->  2. Cerrar Simulador --> 3. indicar Log
-
-**`Función:`** `cerrar`
+**`Función:`** `detener`
 
 **`Parámetros :`** 
 
@@ -282,38 +283,58 @@ paso: valor
 ---
 
 
-## Imprimir Informe
+## Cerrar Simulador
 
- Exporta informe a formatos  xlsx  xls  docx  doc  tiff  tif  png  jpg  bmp  gif  pdf  html  xml  dbf  ods  odt  ppt  csv  txt  svg  pptx
+ Cierra la ejecución del robot con el motivo indicado
 
 
-Para crear de clic:  1. Eventos Robot -->  2. Imprimir Informe --> 3. indicar Reporte,  JSON,  ConTitulos1=si 0=no,  ArchivoSalida
+Para crear de clic:  1. Eventos Robot -->  2. Cerrar Simulador --> 3. indicar Log
 
-**`Función:`** `printreportrpa`
+**`Función:`** `cerrar`
 
 **`Parámetros :`** 
 
-Reporte: valor 
-JSON: valor 
-ConTitulos"1=si 0=no": valor 
-ArchivoSalida: valor 
+Log: valor 
 
 
 ---
 
 
-## Detener Ejecución
+## Esperar Extension Ch Conectada
 
- Detiene la ejecución del robot con el motivo indicado
+ Verifica el estado de conexion de la extension de chrome por la cantidad de intentos en el tiempo de espera determinado
 
 
-Para crear de clic:  1. Eventos Robot -->  2. Detener Ejecución --> 3. indicar Log
+Para crear de clic:  1. Eventos Robot -->  2. Esperar Extension Ch Conectada --> 3. indicar Intentos,  Timeout
 
-**`Función:`** `detener`
+**`Función:`** `waitextenconn`
 
 **`Parámetros :`** 
 
-Log: valor 
+Intentos: valor 
+Timeout: valor 
+
+
+---
+
+
+## Avanzar Pasos
+
+
+
+
+Para crear de clic:  1. Eventos Robot -->  2. Avanzar Pasos
+
+
+---
+
+
+## Ultimo Paso
+
+
+
+
+Para crear de clic:  1. Eventos Robot -->  2. Ultimo Paso
 
 
 ---
@@ -336,6 +357,54 @@ NombreVar: valor
 ---
 
 
+## Ejecutor Variables
+
+ Llama la ejecución de una variable pasando los argumentos como parametros
+
+
+Para crear de clic:  1. Eventos Robot -->  2. Ejecutor Variables --> 3. indicar variable, Parametro1, Parametro2, Parametro_n
+
+**`Función:`** `callervariable`
+
+**`Parámetros :`** 
+
+variable: valor 
+Parametro1: valor 
+Parametro2: valor 
+Parametro_n: valor 
+
+
+---
+
+
+## Cargar Plantilla
+
+
+
+
+Para crear de clic:  1. Eventos Robot -->  2. Cargar Plantilla
+
+
+---
+
+
+## Obtener valor de variable
+
+ Obtiene el valor actual de la variable
+
+
+Para crear de clic:  1. Eventos Robot -->  2. Obtener valor de variable --> 3. indicar NombreVar
+
+**`Función:`** `getvalvar`
+
+**`Parámetros :`** 
+
+NombreVar: valor 
+
+
+---
+
+
 ## Asignar valor a variable
 
  Asigna el valor a la variable indicada
@@ -349,37 +418,6 @@ Para crear de clic:  1. Eventos Robot -->  2. Asignar valor a variable --> 3. in
 
 NombreVar: valor 
 Value: valor 
-
-
----
-
-
-## Imprimir Informe Sql
-
- Exporta informe desde SQL a formatos  xlsx  xls  docx  doc  tiff  tif  png  jpg  bmp  gif  pdf  html  xml  dbf  ods  odt  ppt  csv  txt  svg  pptx
-
-
-Para crear de clic:  1. Eventos Robot -->  2. Imprimir Informe Sql --> 3. indicar Reporte,  sql,  ConTitulos1=si 0=no,  ArchivoSalida
-
-**`Función:`** `printsqlreportrpa`
-
-**`Parámetros :`** 
-
-Reporte: valor 
-sql: valor 
-ConTitulos"1=si 0=no": valor 
-ArchivoSalida: valor 
-
-
----
-
-
-## Ultimo Paso
-
-
-
-
-Para crear de clic:  1. Eventos Robot -->  2. Ultimo Paso
 
 
 ---

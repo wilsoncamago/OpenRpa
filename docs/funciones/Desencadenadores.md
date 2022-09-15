@@ -86,24 +86,6 @@ Proceso: valor
 ---
 
 
-## Mientras no existen archivos
-
- espera la tarea mientras no existan archivos en el directorio por la extensión dada
-
-
-Para crear de clic:  1. Desencadenadores -->  2. Mientras no existen archivos --> 3. indicar Directorio, Extension
-
-**`Función:`** `waitfilesnotexist`
-
-**`Parámetros :`** 
-
-Directorio: valor 
-Extension: valor 
-
-
----
-
-
 ## Mientras no existe proceso
 
  espera la tarea mientras el proceso no esta ejecución
@@ -163,6 +145,24 @@ Ventana: valor
 Para crear de clic:  1. Desencadenadores -->  2. Mientras existen archivos --> 3. indicar Directorio, Extension
 
 **`Función:`** `waitfilesexist`
+
+**`Parámetros :`** 
+
+Directorio: valor 
+Extension: valor 
+
+
+---
+
+
+## Mientras no existen archivos
+
+ espera la tarea mientras no existan archivos en el directorio por la extensión dada
+
+
+Para crear de clic:  1. Desencadenadores -->  2. Mientras no existen archivos --> 3. indicar Directorio, Extension
+
+**`Función:`** `waitfilesnotexist`
 
 **`Parámetros :`** 
 

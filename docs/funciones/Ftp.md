@@ -1,44 +1,18 @@
 # Ftp
 
 
-## Eliminar Archivo
+## Listar Archivos
 
 
 
 
-Para crear de clic:  1. Ftp -->  2. Eliminar Archivo --> 3. indicar server:valor, username:valor, password:valor, port:22,  filepathftp:
+Para crear de clic:  1. Ftp -->  2. Listar Archivos --> 3. indicar server:valor, username:valor, password:valor, port:22,  filepathftp:
 
-**`classname:`** `ApiFtp.DeleteFile`
-
-```csharp
-call('{
-    "classname":"ApiFtp.DeleteFile",
-    value:
-    {
-        "server":"",
-        "username":"",
-        "password":"",
-        "port":22,
-        "filepathftp":""
-    }
-}')
-```
-
----
-
-
-## Crear Directorio
-
-
-
-
-Para crear de clic:  1. Ftp -->  2. Crear Directorio --> 3. indicar server:valor, username:valor, password:valor, port:22,  filepathftp:
-
-**`classname:`** `ApiFtp.AddDirectory`
+**`classname:`** `ApiFtp.ListDirectory`
 
 ```csharp
 call('{
-    "classname":"ApiFtp.AddDirectory",
+    "classname":"ApiFtp.ListDirectory",
     value:
     {
         "server":"",
@@ -80,18 +54,44 @@ call('{
 ---
 
 
-## Listar Archivos
+## Crear Directorio
 
 
 
 
-Para crear de clic:  1. Ftp -->  2. Listar Archivos --> 3. indicar server:valor, username:valor, password:valor, port:22,  filepathftp:
+Para crear de clic:  1. Ftp -->  2. Crear Directorio --> 3. indicar server:valor, username:valor, password:valor, port:22,  filepathftp:
 
-**`classname:`** `ApiFtp.ListDirectory`
+**`classname:`** `ApiFtp.AddDirectory`
 
 ```csharp
 call('{
-    "classname":"ApiFtp.ListDirectory",
+    "classname":"ApiFtp.AddDirectory",
+    value:
+    {
+        "server":"",
+        "username":"",
+        "password":"",
+        "port":22,
+        "filepathftp":""
+    }
+}')
+```
+
+---
+
+
+## Eliminar Archivo
+
+
+
+
+Para crear de clic:  1. Ftp -->  2. Eliminar Archivo --> 3. indicar server:valor, username:valor, password:valor, port:22,  filepathftp:
+
+**`classname:`** `ApiFtp.DeleteFile`
+
+```csharp
+call('{
+    "classname":"ApiFtp.DeleteFile",
     value:
     {
         "server":"",

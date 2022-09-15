@@ -1,12 +1,12 @@
 # Teclado
 
 
-## Combinar teclas
+## Key
 
 
 
 
-Para crear de clic:  1. Teclado -->  2. Combinar teclas
+Para crear de clic:  1. Teclado -->  2. Key
 
 
 ---
@@ -23,12 +23,12 @@ Para crear de clic:  1. Teclado -->  2. Escribir texto
 ---
 
 
-## Key
+## Combinar teclas
 
 
 
 
-Para crear de clic:  1. Teclado -->  2. Key
+Para crear de clic:  1. Teclado -->  2. Combinar teclas
 
 
 ---
