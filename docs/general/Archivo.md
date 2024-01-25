@@ -59,5 +59,6 @@ Smart Bot captura tiene incorpora plantillas de arboles de procesos que agilizar
 3. **Añadir extensión Chrome:** permite la comunicación con el navegador para las operaciones WEB.
 4. **Actualizar Rpa**: permite validar la versión más reciente y ejecuta la actualización automática.
 5. **Descargar SDK Rpa:** permite extender la funcionalidad de RPA con el framework de trabajo Open Source.
+6. **Documentación RPA:** Esta funcionalidad permite generar la documentación tecnica de los Flujos desarrollados con el RPA en formato markdown.
 - **Ayuda**: permite mostrar información sobre derechos reservados del software.
 - **Salir:** permite salir de entorno de trabajo del software.
